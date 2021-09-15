@@ -1,0 +1,55 @@
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+    background: #d3d3d3;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.left {
+    flex: 1;
+}
+
+.left > *:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.center {
+    flex: 2;
+    margin: 0 10px;
+}
+
+.center > *:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.right {
+    flex: 1;
+}
+
+.right > *:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer {
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > ul {
+    column-count: 3;
+    column-gap: 30px;
+    column-width: 300px;
+}
+
