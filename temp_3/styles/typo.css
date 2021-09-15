@@ -1,0 +1,21 @@
+.h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 39px;
+
+}
+
+.h1 > span {
+    color: #F78065;
+}
+
+.mon-20-400 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.mon-18-400 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}

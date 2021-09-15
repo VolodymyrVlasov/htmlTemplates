@@ -5,9 +5,26 @@
     --gaps: 22px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     color: var(--gray);
+}
+
+.section {
+
 }
 
 .gray {
@@ -15,9 +32,6 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     max-width: var(--containerWidth);
     margin: 0 auto;
 }
@@ -50,9 +64,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    border: 1px solid gray;
 }
 
 .nav > li {
