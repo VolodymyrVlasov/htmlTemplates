@@ -1,0 +1,20 @@
+:root {
+    --margin-top: 30px;
+    --transition-time: 220ms;
+
+    --color-theme-coral: #F78065;
+    --color-theme-coral-accent: #e0674c;
+    --color-theme-gray: #7f7f7f;
+    --color-theme-light-gray: #F7F7F7;
+    --color-theme-black: #000;
+    --color-theme-white: #fff;
+
+    --size-menu-w: 100px;
+    --size-menu-h: 52px;
+    --size-scale: 1.1;
+    --size-gap-right: 40px;
+    --size-icon-medium: 24px;
+    --size-icon-large: 32px;
+
+
+}
