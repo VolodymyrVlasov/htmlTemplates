@@ -1,22 +1,18 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="font">
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=0.25">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eazy Camper</title>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;500;700&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<header class="header section">
-    <nav class="row container header-container">
-        <a href="#" class="logo">
+<header class="section-header">
+    <nav class="row space-b container">
+        <a href="/" class="logo">
             <img src="static/icons/ico-logo-cube.svg" alt="logo cube" width="1" height="1">
         </a>
         <div class="menu">
@@ -34,44 +30,45 @@
 
 </header>
 <section class="section">
-    <img class="main_image" src="./static/images/main.webp" alt="women in coral dress">
+    <img class="main_image" decoding="async" width="3" height="1" src="./static/images/main.webp"
+         alt="women in coral dress">
     <div class="container">
         <div class="main_card ">
-            <h1 class="h1">Find out how we can <span>save your time</span> in Backpacking in Europe</h1>
-            <p class="mon-20-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet id eget scelerisque
+            <h1 class="title-39">Find out how we can <span>save your time</span> in Backpacking in Europe</h1>
+            <p class="text-20--gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet id eget scelerisque
                 amet
                 etiam in sit
                 commodo. Pretium ut duis orci pulvinar pretium id consectetur. </p>
-            <a class="btn mon-18-400" href=""><i class="ico-earth"></i>Explore</a>
+            <a class="btn text-20--white" href=""><i class="ico-earth"></i>Explore</a>
         </div>
     </div>
 </section>
 
 <section class="section">
     <div class="container row row_gap">
-        <div class="advantages_card">
+        <div class="advantages_card flex1">
             <img class="advantages_img" src="./static/images/img-promotion-your-territory.svg" loading="lazy"
                  alt="Girl with backpack">
-            <h2 class="h2">Promoting your territory towards foreign tourists </h2>
-            <p class="simple-text">EasyCamper wants to promote the excellence of Italian food and wine, art, culture and
+            <h2 class="title-24">Promoting your territory towards foreign tourists </h2>
+            <p class="text-16--gray">EasyCamper wants to promote the excellence of Italian food and wine, art, culture and
                 the economy. </p>
             <a class="coral-link" href="#">Discover the places linked to your area that you can link to your
                 structure</a>
         </div>
-        <div class="advantages_card">
+        <div class="advantages_card flex1">
             <img class="advantages_img" src="./static/images/img-additional%20services.svg" loading="lazy"
                  alt="Girl with backpack">
-            <h2 class="h2">Additional services designed for the needs of campers</h2>
-            <p class="simple-text">Travelling often means that you dont have time to organise excursions along your
+            <h2 class="title-24">Additional services designed for the needs of campers</h2>
+            <p class="text-16--gray">Travelling often means that you dont have time to organise excursions along your
                 route. EasyCamper takes care of that! </p>
             <a class="coral-link" href="#">Discover the Guided Tours and additional services that you can link to your
                 structure</a>
         </div>
-        <div class="advantages_card">
+        <div class="advantages_card flex1">
             <img class="advantages_img" src="./static/images/img-free-online-showcase.webp" loading="lazy"
                  alt="Girl with backpack">
-            <h2 class="h2">Free online showcase with promotion in Italy and abroad</h2>
-            <p class="simple-text">Forget about the time and money spent on creating your own website or e-commerce
+            <h2 class="title-24">Free online showcase with promotion in Italy and abroad</h2>
+            <p class="text-16--gray">Forget about the time and money spent on creating your own website or e-commerce
                 system for bookings.</p>
             <a class="coral-link" href="#">Easycamper creates your showcase. Discover the terms and conditions for
                 joining the Network</a>
@@ -83,32 +80,32 @@
     <div class="container">
         <h2 class="title-36">Making your facility known is our priority</h2>
         <div class="row row_gap">
-            <div class="advantages_card">
-                <img src="./static/icons/ico-list-checks.svg" alt="Checked list" class="ico-32">
+            <div class="advantages_card flex1">
+                <i class="ico-checks ico-32"></i>
                 <h3 class="title-22">Choose the type of stop</h3>
-                <p class="simple-text h-80">Select the type of stopover you are ordering from Equipped Area, Camping
+                <p class="text-16--gray flex1">Select the type of stopover you are ordering from Equipped Area, Camping
                     and
                     Agricamping</p>
                 <a href="#" class="coral-link">Show me more</a>
             </div>
-            <div class="advantages_card">
-                <img src="./static/icons/ico-spellcheck.svg" alt="Checked list" class="ico-32">
+            <div class="advantages_card flex1">
+                <i class="ico-spellcheck ico-32"></i>
                 <h3 class="title-22">Describe your structure</h3>
-                <p class="simple-text h-80">Describe thee property, location and nearby attractions</p>
+                <p class="text-16--gray flex1">Describe thee property, location and nearby attractions</p>
                 <a href="#" class="coral-link">Show me more</a>
             </div>
-            <div class="advantages_card">
-                <img src="./static/icons/ico-text-frame.svg" alt="Checked list" class="ico-32">
+            <div class="advantages_card flex1">
+                <i class="ico-text-frame ico-32"></i>
                 <h3 class="title-22">Build your showcase</h3>
-                <p class="simple-text h-80">Add photos, videos and descriptions Define the price of each type of that
+                <p class="text-16--gray flex1">Add photos, videos and descriptions Define the price of each type of that
                     make
                     your propety truly</p>
                 <a href="#" class="coral-link">Show me more</a>
             </div>
-            <div class="advantages_card">
-                <img src="./static/icons/ico-calendar.svg" alt="Checked list" class="ico-32">
+            <div class="advantages_card flex1">
+                <i class="ico-calendar ico-32"></i>
                 <h3 class="title-22">Prices and Availability</h3>
-                <p class="simple-text h-80">pitch and configure the availablity
+                <p class="text-16--gray flex1">pitch and configure the availablity
                     calendar.</p>
                 <a href="#" class="coral-link">Show me more</a>
             </div>
@@ -119,108 +116,105 @@
 <section class="section">
     <div class="container row row_gap">
         <div class="card_title">
-            <h3 class="title-36 mw-320">Join the community campervan sites managers.</h3>
-            <p class="simple-text">Discover all the equibbed areas in Italy. Find the shop with all the services for you
+            <h3 class="title-36">Join the community campervan sites managers.</h3>
+            <p class="text-16--gray">Discover all the equibbed areas in Italy. Find the shop with all the services for you
                 and your camper.</p>
-            <a class="btn mon-18-400" href=""><i class="ico-start"></i>Start</a>
+            <a class="btn text-20--white" href=""><i class="ico-start"></i>Start</a>
         </div>
         <div class="link_card">
-            <img src="./static/images/img-lucciano.webp" alt="">
+            <img class="link_card-img" src="./static/images/img-lucciano.webp" decoding="async" height="2" width="1"
+                 alt="lucciano">
             <h4 class="title-22">Lucciano</h4>
-            <p class="simple-text">Rome</p>
+            <p class="text-16--gray">Rome</p>
             <a href="#" class="coral-link">View the Site</a>
         </div>
         <div class="link_card">
-            <img src="./static/images/img-cremonesi.webp" alt="">
+            <img class="link_card-img" src="./static/images/img-cremonesi.webp" decoding="async" width="1" height="2"
+                 alt="cremonesi">
             <h4 class="title-22">Cremonesi</h4>
-            <p class="simple-text">Florence</p>
+            <p class="text-16--gray">Florence</p>
             <a href="#" class="coral-link">View the Site</a>
         </div>
         <div class="link_card">
-            <img src="./static/images/img-beneventi.webp" alt="">
+            <img class="link_card-img" src="./static/images/img-beneventi.webp" decoding="async" width="1" height="2"
+                 alt="beneventi">
             <h4 class="title-22">Beneventi</h4>
-            <p class="simple-text">Venice</p>
+            <p class="text-16--gray">Venice</p>
             <a href="#" class="coral-link">View the Site</a>
         </div>
     </div>
-
+</section>
     <section class="section">
         <div class="container">
             <h3 class="title-36">Our Advantages</h3>
             <div class="row row_gap">
-                <div class="advantages_card">
-                    <img src="./static/icons/ico-highlights.svg" alt="Checked list" class="ico-32">
+                <div class="advantages_card flex1">
+                    <i class="ico-highlights ico-32"></i>
                     <h3 class="title-22 h-60">Convenience and Transparency</h3>
-                    <p class="simple-text h-80">You don’t have to find out later or only after
+                    <p class="text-16--gray flex1">You don’t have to find out later or only after
                         camenierk and trarsparent Easyamper ratains pliacas and beautias of your tariaary and halpin
                         a fixed commission on each transaction of 5</p>
                 </div>
-
-                <div class="advantages_card">
-                    <img src="./static/icons/ico-library-books.svg" alt="Checked list" class="ico-32">
+                <div class="advantages_card flex1">
+                    <i class="ico-library-books ico-32"></i>
                     <h3 class="title-22 h-60">Digital marketing and editorial support</h3>
-                    <p class="simple-text h-80">You don’t have to find out later or only after
+                    <p class="text-16--gray flex1">You don’t have to find out later or only after
                         camenierk and trarsparent Easyamper ratains pliacas and beautias of your tariaary and halpin
                         a fixed commission on each transaction of 5</p>
                 </div>
-
-                <div class="advantages_card">
-                    <img src="./static/icons/ico-compare-hsv.svg" alt="Checked list" class="ico-32">
+                <div class="advantages_card flex1">
+                    <i class="ico-compare-hsv ico-32"></i>
                     <h3 class="title-22 h-60">Community of services dedicated to campers</h3>
-                    <p class="simple-text h-80">You don’t have to find out later or only after
+                    <p class="text-16--gray flex1">You don’t have to find out later or only after
                         camenierk and trarsparent Easyamper ratains pliacas and beautias of your tariaary and halpin
                         a fixed commission on each transaction of 5</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <footer class="section footer">
-        <div class="container row row_gap">
-            <div class="card_title mw-320">
-                <p class="title-22">Easy Camper</p>
-                <p class="title-48">When Passion Meets Comfort.</p>
-            </div>
-            <div class="link_card">
-                <p class="title-22">Discover the Network</p>
-                <ul class="footer_links">
-                    <li><a href="#">Where to shop</a></li>
-                    <li><a href="#">Tour Guided</a></li>
-                    <li><a href="#">Our Tours</a></li>
-                    <li><a href="#">About Us</a></li>
-                </ul>
-            </div>
-            <div class="link_card">
-                <p class="title-22">Become a Manager</p>
-                <ul class="footer_links">
-                    <li><a href="#">Join your Pairing</a></li>
-                    <li><a href="#">Offer your Service</a></li>
-                    <li><a href="#">Are you a guide?</a></li>
-                </ul>
-            </div>
-            <div class="link_card">
-                <p class="title-22">Assistance</p>
-                <ul class="footer_links">
-                    <li><a href="#">Support Center</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Cancallation Options</a></li>
-                    <li><a href="#">Reliablity and Sequrity</a></li>
-                </ul>
-            </div>
+<footer class="section footer">
+    <div class="container row row_gap">
+        <div class="card_title">
+            <p class="title-22">Easy Camper</p>
+            <p class="title-48">When Passion Meets Comfort.</p>
         </div>
-        <div class="container line-top row">
-            <span class="simple-text">EazyCamper. All rights reserved.</span>
-            <ul class="footer_links row row_gap">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Site Map</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Teams</a></li>
+        <div class="link_card">
+            <p class="title-22">Discover the Network</p>
+            <ul class="footer_links">
+                <li><a href="#">Where to shop</a></li>
+                <li><a href="#">Tour Guided</a></li>
+                <li><a href="#">Our Tours</a></li>
+                <li><a href="#">About Us</a></li>
             </ul>
-
-
         </div>
-    </footer>
-</section>
+        <div class="link_card">
+            <p class="title-22">Become a Manager</p>
+            <ul class="footer_links">
+                <li><a href="#">Join your Pairing</a></li>
+                <li><a href="#">Offer your Service</a></li>
+                <li><a href="#">Are you a guide?</a></li>
+            </ul>
+        </div>
+        <div class="link_card">
+            <p class="title-22">Assistance</p>
+            <ul class="footer_links">
+                <li><a href="#">Support Center</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Cancallation Options</a></li>
+                <li><a href="#">Reliablity and Sequrity</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container line-top row">
+        <span class="text-16--gray">EazyCamper. All rights reserved.</span>
+        <ul class="footer_links row row_gap">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Teams</a></li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
