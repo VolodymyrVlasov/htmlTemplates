@@ -528,8 +528,8 @@ a {
 }
 
 .link_card-img {
-    min-height: 420px;
-    min-width: 230px;
+    height: 420px;
+    width: 230px;
     object-fit: cover;
     margin-bottom: 20px;
 }
