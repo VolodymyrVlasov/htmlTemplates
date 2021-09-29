@@ -264,7 +264,7 @@ table {
     --size-menu-h: 52px;
     --size-scale: 1.1;
     --size-scale-focus: 1.16;
-    --size-gap-right: 40px;
+    --size-gap: 40px;
     --size-gap-bottom: 16px;
     --size-icon-medium: 24px;
     --size-icon-large: 32px;
@@ -353,7 +353,7 @@ a {
 }
 
 .row_gap > *:not(:last-child) {
-    margin-right: var(--size-gap-right);
+    margin-right: var(--size-gap);
 }
 
 .flex1 {
@@ -389,6 +389,7 @@ a {
     object-fit: cover;
     margin-top: -96px;
     background: var(--color-theme-gray);
+    transition: 0.3s;
 }
 
 .menu {
@@ -426,6 +427,7 @@ a {
     justify-content: center;
     padding: 14px 22px;
     word-wrap: normal;
+    width: 100%;
 }
 
 .drop-menu > li > a:hover,
@@ -486,6 +488,7 @@ a {
 .advantages_card {
     display: flex;
     flex-direction: column;
+    padding-top: 64px;
 }
 
 .advantages_card > *:nth-child(2) {
@@ -500,19 +503,19 @@ a {
 .advantages_img {
     width: 250px;
     height: 180px;
-    object-fit: contain;
+    object-fit: cover;
     margin-bottom: 84px !important;
 }
 
 .ico-32 {
     width: var(--size-icon-large);
     height: var(--size-icon-large);
-    margin: 64px 0 !important;
-    background: no-repeat center;
+    margin-bottom: 64px !important;
 }
 
 .card_title {
     width: 320px;
+    flex: 1;
 }
 
 .card_title > *:not(:last-child) {
@@ -555,31 +558,31 @@ a {
 }
 
 .ico-checks {
-    background: url("static/icons/ico-list-checks.svg");
+    background: url("static/icons/ico-list-checks.svg") no-repeat center;
 }
 
 .ico-spellcheck {
-    background: url("static/icons/ico-spellcheck.svg");
+    background: url("static/icons/ico-spellcheck.svg") no-repeat center;
 }
 
 .ico-text-frame {
-    background: url("static/icons/ico-text-frame.svg");
+    background: url("static/icons/ico-text-frame.svg") no-repeat center;
 }
 
 .ico-calendar {
-    background: url("static/icons/ico-calendar.svg");
+    background: url("static/icons/ico-calendar.svg") no-repeat center;
 }
 
 .ico-highlights {
-    background: url("static/icons/ico-highlights.svg");
+    background: url("static/icons/ico-highlights.svg") no-repeat center;
 }
 
 .ico-library-books {
-    background: url("static/icons/ico-library-books.svg");
+    background: url("static/icons/ico-library-books.svg") no-repeat center;
 }
 
 .ico-compare-hsv {
-    background: url("static/icons/ico-compare-hsv.svg");
+    background: url("static/icons/ico-compare-hsv.svg") no-repeat center;
 }
 
 .footer {
@@ -603,6 +606,152 @@ a {
     align-items: center;
     padding-top: 28px;
     margin-top: 85px;
+}
+
+/* `xxl` applies to xx-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/*`xl` applies to x-large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .main_card {
+        width: 60%;
+        padding: 60px;
+        margin-top: -350px;
+    }
+}
+
+/* `lg` applies to large devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    :root {
+        --size-section-padding: 48px;
+        --size-gap: 40px;
+        --size-gap-bottom: 8px;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+
+    .main_image {
+        width: 100%;
+        height: 550px;
+        margin-top: -48px;
+    }
+}
+
+/*-------------------------------------------*/
+/* `md` applies to medium devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .main_card {
+        width: 100%;
+        padding: 30px;
+        margin-top: -40px;
+    }
+
+    .main_image {
+        width: 100%;
+        height: 400px;
+        margin-top: -48px;
+    }
+}
+
+/* `sm` applies to small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .row.row_gap {
+        flex-direction: column;
+    }
+
+    .row_gap > *:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: var(--size-gap);
+    }
+
+
+    .title-39 {
+        font-size: 28px;
+    }
+
+    .main_image {
+        width: 100%;
+        height: 320px;
+        object-position: -100px;
+        margin-top: -48px;
+    }
+
+    .advantages_img {
+        margin-bottom: 20px !important;
+    }
+
+    .advantages_card {
+        padding-top: 20px;
+    }
+
+    .advantages_card > *:nth-child(2) {
+        height: 2rem;
+    }
+
+    .ico-32 {
+        margin-bottom: 32px !important;
+    }
+
+    .card_title {
+        width: 100%;
+    }
+
+    .link_card-img {
+        width: 100%;
+        height: 360px;
+    }
+
+    .line-top.row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .line-top.row > span {
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        padding-top: 60px;
+        order: 2;
+    }
+
+    .footer_links * {
+        margin-bottom: 0 !important;
+    }
+}
+
+/* `xsm` applies to x-small devices (iPhone 5/5s/SE, equals to 320px) */
+@media (max-width: 320px) {
+
+    .main_image {
+        width: 100%;
+        height: 270px;
+        object-position: -266px;
+        margin-top: -48px;
+    }
 }
 
 
