@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta name="description" content="Сайт об HTML и создании сайтов">
     <meta name="Keywords"
           content="Печать на оракале, печать на пленке, большая самоклейка, самоклейка А0,
@@ -13,54 +13,49 @@
     <title>Друк на оракалі в Києві. Найвища якість друку 1440p на плавіці рітрама (ritrama)</title>
 </head>
 <body>
-<section class="section">
-    <div class="container row row-gap">
-        <div class="col">
+<section class="head-section">
+    <div class="head-container row row-gap">
+        <div class="col col-b-gap">
             <h1 class="text-60">Друк на оракалі</h1>
-            <p class="text">Екосольвентний друк на самоклеючій плівці, матовій, глянцевій, прозорій, блекаут, банері</p>
+            <p class="text">Екосольвентний друк <br>на самоклеючій плівці, матовій, глянцевій,<br> прозорій, блекаут,
+                банері</p>
             <div class="row row-gap">
-                <ol class="reviews">
-                    <li aria-label="review: 5 star"></li>
-                    <li aria-label="review: 5 star"></li>
-                    <li aria-label="review: 5 star"></li>
-                    <li aria-label="review: 5 star"></li>
-                    <li aria-label="review: 5 star"></li>
-                </ol>
-                <a href="./img/s">272 reviews on Google</a>
+                <a class="reviews" rel="noopener noreferrer nofollow"
+                   target="_blank"
+                   href="https://www.google.com/maps/place/PaperFox+-+Полиграфия/@50.4675666,30.5094684,17z/data=!4m5!3m4!1s0x40d4ce14f2b5405f:0x94449792843e5c2a!8m2!3d50.4675994!4d30.5116056"
+                >
+                    <ol class="row">
+                        <li aria-label="review: 5 star"></li>
+                        <li aria-label="review: 5 star"></li>
+                        <li aria-label="review: 5 star"></li>
+                        <li aria-label="review: 5 star"></li>
+                        <li aria-label="review: 5 star"></li>
+                    </ol>
+                    272 reviews on Google</a>
             </div>
         </div>
-        <img class="main_image"
-             src="./img/large-printing-process-paperfox.webp"
-             width="2" height="1"
-             decoding="async" loading="lazy"
-             alt="man with girl talk  about large printing">
     </div>
 </section>
-
 <section class="section">
-    <div class="container">
-        <h2 class="text-32">Вартість друку<br>Попередній розрахунок</h2>
+    <div class="container col col-gap">
+        <h2 class="text-32">Попередній розрахунок вартості друку</h2>
         <p class="text">Оберіть параметри потрібної продукції для орієнтовного розрахунку вартості та термінів</p>
-        <div class="calculator row row-gap">
-            <div class="inputs col col-gap border-right">
+        <div class="calculator row">
+            <div class="inputs col col-b-gap border-right">
                 <div class="range row row-gap">
                     <div class="range col col-gap">
                         <label aria-label="Обери ширину у самтиметрах" for="width">
-                            Ширина:
-                            <span id="width">10 см.</span>
-                        </label>
-                        <input type="range" min="10" max="300" step="1">
+                            Ширина: <b id="width-label">10</b> см.</label>
+                        <input id="width" type="range" min="10" max="300" step="1">
                     </div>
                     <div class="range col col-gap">
                         <label aria-label="Обери довжину у самтиметрах" for="height">
-                            Ширина:
-                            <span id="height">10 см.</span>
-                        </label>
-                        <input type="range" min="10" max="300" step="1">
+                            Довжина: <b id="height-label">10</b> см.</label>
+                        <input id="height" type="range" min="10" max="300" step="1">
                     </div>
                 </div>
                 <div class="material-quality row row-gap">
-                    <div class="select  col col-gap">
+                    <div class="select col">
                         <label for="material">Матеріал</label>
                         <select name="material" id="material" aria-label="Обери матеріал наліпки">
                             <option value="">
@@ -70,7 +65,7 @@
                             <option value="">Наліпка глянцева (Blackout)</option>
                         </select>
                     </div>
-                    <div class="select col col-gap">
+                    <div class="select col">
                         <label for="quality">Якість</label>
                         <select name="quality" id="quality" aria-label="Обери якість друку наліпки">
                             <option value="720p">Стандартна 720р</option>
@@ -84,46 +79,48 @@
                 <label for="prod-time">Орієнтовний термін</label>
                 <strong id="prod-time">п’ятниця, 1 жовтня 18:30</strong>
                 <label for="price">Варстіть:</label>
-                <strong id="price">210 грн</strong>
+                <strong id="price" class="price">210 грн</strong>
             </div>
         </div>
     </div>
 </section>
-
-<section class="section">
-    <div class="container">
+<section class="section ">
+    <div class="container col col-b-gap">
         <h3 class="text-32">Потрібна консультація?</h3>
-        <div class="social row">
-            <div class="contact_card">
-                <i class="phone">Phone</i>
+        <div class="social row row-gap">
+            <a class="contact_card col"
+               href="tel:0800332042">
+                <span class="phone">Phone</span>
                 <p>Зателефонуй нам</p>
-                <a href="tel:0800332042">0 800 332 042</a>
-            </div>
-            <div class="contact_card">
-                <i class="telegram">Telegram</i>
+                <u>0 00 332 042</u>
+            </a>
+            <a class="contact_card col"
+               href="https://t.me/@Paper_Fox">
+                <span class="telegram">Telegram</span>
                 <p>Напишіть у чат</p>
-                <a href="https://t.me/@Paper_Fox">@Paper_Fox</a>
-            </div>
-            <div class="contact_card">
-                <i class="email">Email</i>
+                <u>@Paper_Fox</u>
+            </a>
+            <a class="contact_card col"
+               href="mailto:print@paperfox.com.ua">
+                <span class="email">Email</span>
                 <p>Напишіть на пошту</p>
-                <a href="mailto:print@paperfox.com.ua">print@paperfox.com.ua</a>
-            </div>
-            <div class="contact_card">
-                <i class="email">Email</i>
-                <p>Напишіть на пошту</p>
-                <a href="viber://add?number=380730472212">Напишіть у чат</a>
-            </div>
+                <u>print@paperfox.com.ua</u>
+            </a>
+            <a class="contact_card col"
+               href="viber://add?number=380730472212">
+                <span class="viber">Viber</span>
+                <p>Напишіть у чат</p>
+                <u>+38 073 047 2212</u>
+            </a>
         </div>
     </div>
 </section>
-
 <section class="section">
-    <div class="container">
+    <div class="container col col-b-gap">
         <h3 class="text-32">Питання та відповіді</h3>
         <div class="accordion">
             <div class="a-container">
-                <h4 class="a-btn">Що ознає друк 720 / 1080 або 1440?<span class="a-btn-ico"></span></h4>
+                <h4 class="a-btn" tabindex="0">Що ознає друк 720 / 1080 або 1440?<span class="a-btn-ico"></span></h4>
                 <div class="a-panel">
                     <p>Правльно називати повну назву 720 dpi, 1080 dpi, 1440 dpi. DPI - dots per inch (точок на дюйм).
                         Саме скільки точок чорнила має впасти наматеріал щоб задрукувати 1 дюйм. Постери друкують у 720
@@ -134,7 +131,7 @@
                 </div>
             </div>
             <div class="a-container">
-                <h4 class="a-btn">Які вимоги до макетів?<span class="a-btn-ico"></span></h4>
+                <h4 class="a-btn" tabindex="0">Які вимоги до макетів?<span class="a-btn-ico"></span></h4>
                 <div class="a-panel">
                     <p>Макети подаются у настуних форматах: pdf, ai, eps, tif, jpg. Профіль: sRGB або CMYK. Роздільна
                         здатність: стікерпаки та малі наліпки 450 / 300 dpi, А1 та більше - 150 dpi
@@ -143,19 +140,18 @@
                     </p>
                 </div>
             </div>
-
-
             <div class="a-container">
-                <h4 class="a-btn">Скільки часу потрібно на виготовлення замовлення?<span class="a-btn-ico"></span></h4>
+                <h4 class="a-btn" tabindex="0">Скільки часу потрібно на виготовлення замовлення?<span
+                        class="a-btn-ico"></span></h4>
                 <div class="a-panel">
                     <p>В залежності від замовлення та завантаженості виробництва на момент замовлення час а виконання
                         може складати від 30 хв до 1 дня. Проте актуальну інформацію краще записатйте у співробітників
                     </p>
                 </div>
             </div>
-
             <div class="a-container">
-                <h4 class="a-btn"> Який розмір я можу надрукувати якісно?<span class="a-btn-ico"></span></h4>
+                <h4 class="a-btn" tabindex="0"> Який розмір я можу надрукувати якісно?<span class="a-btn-ico"></span>
+                </h4>
                 <div class="a-panel">
                     <p>Все залежить від наданого нам файлу. Векторе зображення не має обмежень в розмірі, растрове
                         (фото) має певні обмеження. Знову ж таки - скидайте на пошту або у месенджери :)
@@ -163,7 +159,7 @@
                 </div>
             </div>
             <div class="a-container">
-                <h4 class="a-btn">Як довго тримається друк на плівці?<span class="a-btn-ico"></span></h4>
+                <h4 class="a-btn" tabindex="0">Як довго тримається друк на плівці?<span class="a-btn-ico"></span></h4>
                 <div class="a-panel">
                     <p>Виробник чорнил дає гарантію для викорстання екстер’єрного виористання - 2 роки., для
                         інтер’єрного -термін ен обмежений. Проте варто звенутри увагу що наліпки на ноутбук “живуть”
@@ -174,7 +170,8 @@
                 </div>
             </div>
             <div class="a-container">
-                <h4 class="a-btn">Чим відрізняється вініл від самоклейки або PET<span class="a-btn-ico"></span></h4>
+                <h4 class="a-btn" tabindex="0">Чим відрізняється вініл від самоклейки або PET<span
+                        class="a-btn-ico"></span></h4>
                 <div class="a-panel">
                     <p>Вініл - синтетичний матеріал який не “боїться” вологи та жирних речовин. Розмір готвого виробу
                         може мати буль який розмір - від маленької круглої або фігурної наліпки до
@@ -292,7 +289,6 @@
         </table>
     </div>
 </section>
-
 <section class="section">
     <iframe id="mapIframe" loading="lazy"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448.93903633070124!2d30.511283627447845!3d50.467495100430575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce6b488d6537%3A0x6c0f58a981bc9200!2z0YPQuy4g0K_RgNC-0YHQu9Cw0LLRgdC60LDRjywgMTQsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1577879411956!5m2!1sru!2sua"
@@ -304,7 +300,6 @@
     <div class="container">
     </div>
 </section>
-
 <section class="section">
     <div class="container">
         <h2 class="text-32">
@@ -336,8 +331,6 @@
         </p>
     </div>
 </section>
-
-
 <script src="./app.js"></script>
 </body>
 </html>

@@ -13,7 +13,7 @@ const accordion = (elem) => {
                 target.parentElement.classList.remove('active')
             }
         }
-    })
+    }, {passive: true})
 }
 
 accordion('.accordion')

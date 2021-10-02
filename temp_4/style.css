@@ -1,7 +1,279 @@
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+
+/* hebrew */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+
+/* vietnamese */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+
+/* hebrew */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+
+/* vietnamese */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+
+/* hebrew */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+
+/* vietnamese */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
 :root {
     --size-gap: 16px;
+    --size-big-gap: 48px;
+    --size-icon: 20px;
 
     --color-theme: #D83E1B;
+    --color-light-theme: #ffe8e3;
+    --color-light-light-theme: #FFF6F4;
+    --color-gray: #6E6E6E;
+    --color-light-gray: #eeeeee;
+    --color-light-light-gray: #fbfbfb;
 }
 
 .text-60 {
@@ -11,22 +283,43 @@
 
 .text-32 {
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .text-16--bold {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
-.section {
-    width: 100%;
+body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
+
 .section {
-    padding: 50px 0;
+    padding: 40px 0;
 }
+
+.bg-gray {
+    background-color: var(--color-light-light-gray);
+}
+
+.head-section {
+    background-color: var(--color-light-gray);
+    box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.05);
+}
+
+.head-container {
+    width: 1000px;
+    height: 330px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background-image: url("./img/large-printing-process-paperfox.webp");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
 .container {
     width: 100%;
     max-width: 1000px;
@@ -44,8 +337,28 @@
     align-items: flex-start;
 }
 
-.col-gap > div :not(:last-child) {
-    margin-bottom: var(--size-gap);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-flex;
+    color: inherit;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.col-gap > *:not(:last-child) {
+    margin-bottom: var(--size-gap) !important;
+}
+
+.col-b-gap > *:not(:last-child) {
+    margin-bottom: var(--size-big-gap);
 }
 
 .row-gap > div:not(:last-child) {
@@ -59,16 +372,230 @@
 
 .reviews {
     display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 12px;
+    color: var(--color-gray);
+    padding: 8px 0;
+    transition: 0.3s;
+}
+
+.reviews:hover,
+.reviews:focus {
+    transform: scale(1.1);
+    border-radius: 999px;
+    padding: 8px;
+    outline: 1px solid var(--color-theme);
+    color: var(--color-theme);
+}
+
+.reviews > ol > li {
+    width: 14px;
+    height: 14px;
+    background: url("./img/start.svg") no-repeat center;
+}
+
+ol.row > li {
+    margin-right: 5px;
+}
+
+.main_image {
+    width: 936px;
+    height: 415px;
+    bottom: 0;
+    right: -50px;
+    opacity: 0.95;
+    z-index: 1;
+}
+
+/* input range */
+input[type='range'] {
+    overflow: hidden;
+    -webkit-appearance: none;
+    border-radius: 999px;
+    border: 1px solid var(--color-light-gray);
+    transition: 0.3s;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    width: 32px;
+    -webkit-appearance: none;
+    height: 12px;
+    border-radius: 999px;
+    cursor: ew-resize;
+    background: #fff;
+    border: 1px solid var(--color-theme);
+    box-shadow: -306px 0 0 300px var(--color-theme);
+}
+
+input[type='range']:hover,
+input[type='range']:focus {
+    outline: none;
+    border: 1px solid var(--color-theme);
+
+}
+
+input[type="range"]::-moz-range-progress {
+    background-color: var(--color-theme);
+}
+
+input[type="range"]::-moz-range-track {
+    background-color: #fff;
 }
 
 
-.reviews > i {
+/* calculator */
 
+.calculator {
+    width: 100%;
+    padding: 60px 0;
+}
+
+.inputs {
+    flex: 4.5;
+    padding: 40px 40px 40px 0;
+}
+
+.summary {
+    flex: 1;
+    padding: 40px 0 40px 40px;
+}
+
+.range {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.range > label {
+    color: var(--color-gray);
+    font-size: 14px;
+    padding-left: var(--size-gap);
+}
+
+.range > input {
+    width: 100%;
+}
+
+/* select */
+.material-quality {
+    width: 100%;
+}
+
+.select {
+    width: 100%;
+    border: 1px solid var(--color-light-gray);
+    padding-top: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.select > label {
+    color: var(--color-gray);
+    font-size: 14px;
+    padding-left: var(--size-gap);
+}
+
+.select:focus-within,
+.select:hover {
+    border: 1px solid var(--color-theme);
+}
+
+.select:focus-within > label,
+.select:hover > label {
+    color: var(--color-theme);
+}
+
+.select > select {
+    border: 0;
+    outline: none;
+    width: 95%;
+    background-color: transparent;
+    margin-top: -24px;
+    padding: 32px var(--size-gap) 8px calc(var(--size-gap) - 5px);
+    border-radius: 999px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.price {
+    padding: 8px var(--size-gap);
+    background-color: var(--color-light-theme);
+    border-radius: 8px;
+    font-size: 24px;
+    color: var(--color-theme)
+}
+
+/* contact cards */
+.social {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact_card {
+}
+
+.contact_card:hover > span:before,
+.contact_card:focus > span:before {
+    transform: scale(1.7);
+    outline: none;
+}
+
+.contact_card > u {
+    color: var(--color-theme);
+}
+
+.contact_card > span {
+    display: flex;
+    position: relative;
+    padding-top: 34px;
+    margin-bottom: 24px;
+    font-size: 24px;
+    color: var(--color-theme);
 }
 
 
-/* accordion*/
+.telegram:before {
+    content: "";
+    width: var(--size-icon);
+    height: var(--size-icon);
+    background: url("./img/icon-telegram.svg") no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    transition: 300ms;
+}
 
+.viber:before {
+    content: "";
+    width: var(--size-icon);
+    height: var(--size-icon);
+    background: url("./img/icon-viber.svg") no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    transition: 300ms;
+}
+
+.email:before {
+    content: "";
+    width: var(--size-icon);
+    height: var(--size-icon);
+    background: url("./img/icon-email.svg") no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    transition: 300ms;
+}
+
+.phone:before {
+    content: "";
+    width: var(--size-icon);
+    height: var(--size-icon);
+    background: url("./img/icon-tel.svg") no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    transition: 300ms;
+}
+
+/* accordion */
 .accordion {
     display: flex;
     flex-direction: column;
@@ -84,17 +611,23 @@
 }
 
 .a-btn {
-    margin: 0;
     position: relative;
-    padding: 15px 30px;
+    padding: 16px 30px;
     width: 100%;
-    color: #bdbdbd;
+    /*color: var(--color-theme);*/
     display: block;
-    font-weight: 500;
-    background-color: #262626;
+    font-weight: 400;
+    background-color: var(--color-light-light-gray);
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border-radius: 5px;
+    border-radius: 12px;
+    transition: 300ms;
+}
+
+.a-btn:hover,
+.a-btn:focus {
+    color: var(--color-theme);
+    background-color: var(--color-light-light-theme);
+    outline: none;
 }
 
 .a-btn-ico {
@@ -108,54 +641,61 @@
 
 .a-btn-ico::after {
     content: '';
-    width: 14px;
-    height: 3px;
+    width: 16px;
+    height: 2px;
     border-radius: 2px;
-    background-color: #fff;
+    background-color: black;
     position: absolute;
     top: 6px;
+    transition: 0.3s;
 }
 
 .a-btn-ico::before {
     content: '';
-    width: 14px;
-    height: 3px;
+    width: 16px;
+    height: 2px;
     border-radius: 2px;
-    background-color: #fff;
+    background-color: black;
     position: absolute;
     top: 6px;
     transform: rotate(90deg);
-    transition: all 0.3s ease-in-out;
+    transition: 0.3s;
 }
 
 .a-panel {
     width: 100%;
-    color: #262626;
-    transition: all 0.2s ease-in-out;
+    transition: 300ms;
     opacity: 0;
     height: auto;
     max-height: 0;
     overflow: hidden;
-    padding: 0px 10px;
+    padding: 0 30px;
+
 }
 
 .active {
+    transition: 300ms;
 }
 
 .active > .a-btn {
-    color: #fff;
+    background-color: var(--color-light-light-theme);
+    color: var(--color-theme);
 }
 
 .option {
-    padding:50px;
+    padding: 50px;
 }
 
 .active > .a-btn > .a-btn-ico::before {
     transform: rotate(0deg);
 }
 
+.active > .a-btn > .a-btn-ico::after {
+    background-color: var(--color-theme);
+}
+
 .active > .a-panel {
-    padding: 15px 10px 10px 10px;
+    padding: 30px;
     opacity: 1;
     max-height: 500px;
 }
