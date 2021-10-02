@@ -1,0 +1,163 @@
+:root {
+    --size-gap: 16px;
+
+    --color-theme: #D83E1B;
+}
+
+.text-60 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.text-32 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.text-16--bold {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.section {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.section {
+    padding: 50px 0;
+}
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.col-gap > div :not(:last-child) {
+    margin-bottom: var(--size-gap);
+}
+
+.row-gap > div:not(:last-child) {
+    margin-right: var(--size-gap);
+}
+
+.border-right {
+    padding-right: var(--size-gap);
+    border-right: 1px solid var(--color-theme);
+}
+
+.reviews {
+    display: flex;
+}
+
+
+.reviews > i {
+
+}
+
+
+/* accordion*/
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.a-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.a-btn {
+    margin: 0;
+    position: relative;
+    padding: 15px 30px;
+    width: 100%;
+    color: #bdbdbd;
+    display: block;
+    font-weight: 500;
+    background-color: #262626;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.a-btn-ico {
+    display: block;
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    right: 20px;
+    top: 18px;
+}
+
+.a-btn-ico::after {
+    content: '';
+    width: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 6px;
+}
+
+.a-btn-ico::before {
+    content: '';
+    width: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 6px;
+    transform: rotate(90deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.a-panel {
+    width: 100%;
+    color: #262626;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px 10px;
+}
+
+.active {
+}
+
+.active > .a-btn {
+    color: #fff;
+}
+
+.option {
+    padding:50px;
+}
+
+.active > .a-btn > .a-btn-ico::before {
+    transform: rotate(0deg);
+}
+
+.active > .a-panel {
+    padding: 15px 10px 10px 10px;
+    opacity: 1;
+    max-height: 500px;
+}
+
+

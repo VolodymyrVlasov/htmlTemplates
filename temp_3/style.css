@@ -634,10 +634,15 @@ a {
         --size-section-padding: 48px;
         --size-gap: 40px;
         --size-gap-bottom: 8px;
+
     }
 
     .container {
         max-width: 720px;
+    }
+
+    .row.row_gap {
+        flex-direction: column;
     }
 
     .main_image {
