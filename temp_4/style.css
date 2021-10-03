@@ -701,3 +701,79 @@ input[type="range"]::-moz-range-track {
 }
 
 
+/* price table*/
+.table {
+    width: 100%;
+    /*border-collapse: collapse;*/
+    transition: 300ms;
+
+}
+
+.table * * :not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.table thead {
+    height: 52px;
+    background-color: var(--color-light-light-theme);
+}
+
+.table * > tr > th:nth-child(1) {
+    border-radius: 12px 0 0 12px;
+}
+
+.table * > tr > *:last-child {
+    border-radius: 0 12px 12px 0;
+}
+
+
+.table > tbody td {
+    width: 15%;
+    text-align: center;
+    padding: 12px 24px;
+    transform: translateX(8px);
+    transition: 300ms;
+
+}
+
+.table > tbody td:after {
+    font-size: 10px;
+    content: "грн/м²";
+    margin-left: 5px;
+    opacity: 0;
+    position: relative;
+    right: 8px;
+    transition: 300ms;
+}
+
+.table > tbody td:hover {
+    transform: translateX(0) scale(1.1);
+}
+
+.table > tbody td:hover:after {
+    opacity: 1;
+    right: 0;
+}
+
+.table > tbody th {
+    font-weight: 600;
+    text-align: left;
+    padding: 12px 24px;
+}
+
+.table > tbody tr:hover {
+    background-color: var(--color-light-gray);
+}
+
+.table * {
+
+    transition: 300ms;
+
+}
+
+
+td {
+    padding: 12px 24px;
+}
+
+
