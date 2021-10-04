@@ -17,3 +17,4 @@ const accordion = (elem) => {
 }
 
 accordion('.accordion')
+
