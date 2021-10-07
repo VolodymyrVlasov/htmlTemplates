@@ -47,15 +47,15 @@
             <div class="calculator row">
                 <div class="inputs col col-b-gap border-right">
                     <div class="range row row-gap">
-                        <div class="range col col-gap">
-                            <label aria-label="Обери ширину у самтиметрах" for="width">
-                                Ширина: <b id="width-label">10</b> см.</label>
-                            <input id="width" type="range" min="10" max="300" step="1">
+                        <div class="custom_range" id="input-width">
+                            <span for="input_range-width" id="input_label-width" class="text-16--bold">0</span>
+                            <label aria-label="Обери ширину у самтиметрах" for="input_range-width">Довжина</label>
+                            <input type="range" id="input_range-width" min="0" max="100" value="0"/>
                         </div>
-                        <div class="range col col-gap">
-                            <label aria-label="Обери довжину у самтиметрах" for="height">
-                                Довжина: <b id="height-label">10</b> см.</label>
-                            <input id="height" type="range" min="10" max="300" step="1">
+                        <div class="custom_range" id="input-height">
+                            <span for="input_range-height" class="label">0</span>
+                            <label for="input_range-height" aria-label="Обери ширину у самтиметрах">Довжина</label>
+                            <input type="range" id="input_range-height" min="0" max="100" value="0"/>
                         </div>
                     </div>
                     <div class="material-quality row row-gap">
@@ -73,7 +73,6 @@
                             <label for="quality">Якість</label>
                             <select name="quality" id="quality" aria-label="Обери якість друку наліпки">
                                 <option value="720p">Стандартна 720р</option>
-                                <option value="1080p">Висока 1080р</option>
                                 <option value="1440p">Найвища 1440р</option>
                             </select>
                         </div>
@@ -420,7 +419,7 @@
         </iframe>
 
     </section>
-    <section class="section">
+    <section class="section ">
         <div class="container col-gap">
             <h2 class="text-32">
                 Друк на самоклеючій вініловій плівці Oracal, Ritrama.<br>Терміново та якісно у Києві
