@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<section class="section">
+    <div class="container">
+        <h2>Вартість друку наклейок і стікер-паків (стікер – сетів)</h2>
+        <div class="row row-gap">
+            <div class="col card">
+                <p>Форма:</p>
+                <label for="rounded" class="label">
+                    <input type="radio" name="figure" id="rounded" checked>
+                    Круглі
+                </label>
+                <label for="squared" class="label">
+                    <input type="radio" name="figure" id="squared">
+                    Прямокутні
+                </label>
+                <label for="stickerset" class="label">
+                    <input type="radio" name="figure" id="stickerset">
+                    Стікерпак
+                </label>
+            </div>
+            <div class="col card" id="sizes-cards">
+                <p>Розмір:</p>
+                <div class="col sizes-active" id="round_sizes">
+                    <label for="10mm" class="label">
+                        <input type="radio" name="round_sizes" id="10mm">
+                        Ø 10 мм
+                    </label>
+                    <label for="30mm" class="label">
+                        <input type="radio" name="round_sizes" id="30mm">
+                        Ø 30 мм
+                    </label>
+                    <label for="40mm" class="label">
+                        <input type="radio" name="round_sizes" id="40mm">
+                        Ø 40 мм
+                    </label>
+                    <label for="50mm" class="label">
+                        <input type="radio" name="round_sizes" id="50mm" checked>
+                        Ø 50 мм
+                    </label>
+                    <label for="65mm" class="label">
+                        <input type="radio" name="round_sizes" id="65mm">
+                        Ø 65 мм
+                    </label>
+                    <label for="70mm" class="label">
+                        <input type="radio" name="round_sizes" id="70mm">
+                        Ø 70 мм
+                    </label>
+                    <label for="90mm" class="label">
+                        <input type="radio" name="round_sizes" id="90mm">
+                        Ø 90 мм
+                    </label>
+                    <label for="100mm" class="label">
+                        <input type="radio" name="round_sizes" id="100mm">
+                        Ø 100 мм
+                    </label>
+                </div>
+                <div class="col sizes" id="squared_sizes">
+                    <label for="10x25" class="label">
+                        <input type="radio" name="squared_sizes" id="10x25">
+                        10x20 мм
+                    </label>
+                    <label for="15x25" class="label">
+                        <input type="radio" name="squared_sizes" id="15x25">
+                        15x25 мм
+                    </label>
+                    <label for="30x40" class="label">
+                        <input type="radio" name="squared_sizes" id="30x40">
+                        30x40 мм
+                    </label>
+                    <label for="50x50" class="label">
+                        <input type="radio" name="squared_sizes" id="50x50" checked>
+                        50x50 мм
+                    </label>
+                    <label for="40x60" class="label">
+                        <input type="radio" name="squared_sizes" id="40x60">
+                        40x60 мм
+                    </label>
+                    <label for="90x50" class="label">
+                        <input type="radio" name="squared_sizes" id="90x50">
+                        90x50 мм
+                    </label>
+                    <label for="100x70" class="label">
+                        <input type="radio" name="squared_sizes" id="100x70">
+                        100х70 мм
+                    </label>
+                    <label for="a6" class="label">
+                        <input type="radio" name="squared_sizes" id="a6">
+                        А6
+                    </label>
+                    <label for="a5" class="label">
+                        <input type="radio" name="squared_sizes" id="a5">
+                        А5
+                    </label>
+                </div>
+                <div class="col sizes" id="stickerset_sizes">
+                    <label for="A6ST" class="label">
+                        <input type="radio" name="sticker_sizes" id="A6ST">
+                        А6 (105x148 мм)
+                    </label>
+                    <label for="A5ST" class="label">
+                        <input type="radio" name="sticker_sizes" id="A5ST" checked>
+                        А5 (148x210 мм)
+                    </label>
+                    <label for="A4ST" class="label">
+                        <input type="radio" name="sticker_sizes" id="A4ST">
+                        А4 (210x297 мм)
+                    </label>
+                </div>
+            </div>
+            <div class="col card" id="materials">
+                <p>Матеріал:</p>
+                <label for="paper" class="label">
+                    <input type="radio" name="material" id="paper" checked>
+                    Паперова наліпка
+                </label>
+                <label for="vinyl" class="label">
+                    <input type="radio" name="material" id="vinyl">
+                    Вінілова наліпка
+                </label>
+                <label for="pet" class="label">
+                    <input type="radio" name="material" id="pet">
+                    PET наліпка
+                </label>
+            </div>
+            <div class="col card">
+                <p>Форма видачі:</p>
+                <label for="sheet-A4" class="label">
+                    <input type="radio" name="output-f" id="sheet-A4" checked>
+                    На аркушах А4
+                </label>
+                <label for="sheet-A3" class="label">
+                    <input type="radio" name="output-f" id="sheet-A3">
+                    На аркушах А3
+                </label>
+                <label for="each_one" class="label">
+                    <input type="radio" name="output-f" id="each_one">
+                    Кожна окремо
+                </label>
+            </div>
+            <div class="col card">
+                <p>Вартість:</p>
+                <ul class="ul">
+                    <li>
+                        <p>50 шт.:</p>
+                        <span id="50pcs">0</span>
+                    </li>
+                    <li>
+                        <p>100 шт.:</p>
+                        <span id="100pcs">0</span>
+                    </li>
+                    <li>
+                        <p>200 шт.:</p>
+                        <span id="200pcs">0</span>
+                    </li>
+                    <li>
+                        <p>300 шт.:</p>
+                        <span id="300pcs">0</span>
+                    </li>
+                    <li>
+                        <p>500 шт.:</p>
+                        <span id="500pcs">0</span>
+                    </li>
+                    <li>
+                        <p>1000 шт.:</p>
+                        <span id="1000pcs">0</span>
+                    </li>
+                    <li>
+                        <p>2000 шт.:</p>
+                        <span id="2000pcs">0</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="app.js"></script>
+
+</body>
+</html>
