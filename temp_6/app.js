@@ -46,7 +46,6 @@ const toggleSmallSizes = (setDisable) => {
         Object.values(sizes).forEach((labelNode, index) => {
             let input = labelNode.firstElementChild
             if (index < 3) {
-                console.log(input.id)
                 input.disabled = setDisable
             }
         })
@@ -64,10 +63,13 @@ const toggleCutType = (onlyEachOne) => {
     }
 }
 
-const setDefaultSize = () => {
+const setDefaultChoice = (e) => {
     document.getElementById("50mm").checked = true
     document.getElementById("50x50").checked = true
     document.getElementById("A5ST").checked = true
+    if (e?.target.id !== "each_one") {
+        document.getElementById("sheet-A3").checked = true
+    }
 }
 
 const setCheckedParams = (obj, key, value) => {
@@ -82,46 +84,85 @@ const calculatePrice = () => {
 
 }
 
-rounded.addEventListener("click", (e) => {
-    replaceSizes("round_sizes")
+const standardShape = ((shapeId, sizesId) => {
+    replaceSizes(sizesId)
     togglePet()
-    toggleCutType()
     calculatePrice()
-    setDefaultSize()
+    setDefaultChoice()
+    toggleSmallSizes(false)
+    toggleCutType()
     setCheckedParams({
-        "figure": e.target.id,
+        "figure": shapeId,
         "size": "50mm",
     })
 })
-squared.addEventListener("click", (e) => {
-    replaceSizes("squared_sizes")
-    togglePet()
-    toggleCutType()
-    calculatePrice()
-    setDefaultSize()
-    setCheckedParams({
-        "figure": e.target.id,
-        "size": "50x50",
-    })
-})
-stickerset.addEventListener("click", (e) => {
-    replaceSizes("stickerset_sizes")
-    togglePet(true)
-    toggleCutType(true)
-    calculatePrice()
-    setDefaultSize()
-    setCheckedParams({
-        "figure": e.target.id,
-        "size": "A5ST",
-        "cut": "each_one"
-    })
-})
+
+document.addEventListener("click", (e => {
+    const id = e?.target.id
+
+    switch (id) {
+        case "rounded":
+            standardShape(id, "round_sizes")
+            break
+        case "squared":
+            standardShape(id, "squared_sizes")
+            break
+        case "stickerset":
+            replaceSizes("stickerset_sizes")
+            togglePet(true)
+            setDefaultChoice()
+            toggleCutType(true)
+            setCheckedParams({
+                "figure": e.target.id,
+                "size": "A5ST",
+                "cut": "each_one"
+            })
+            calculatePrice()
+            break
+    }
+}))
+
+//
+// rounded.addEventListener("click", (e) => {
+//     replaceSizes("round_sizes")
+//     togglePet()
+//     calculatePrice()
+//     setDefaultChoice()
+//     toggleCutType()
+//     setCheckedParams({
+//         "figure": e.target.id,
+//         "size": "50mm",
+//     })
+// })
+// squared.addEventListener("click", (e) => {
+//     replaceSizes("squared_sizes")
+//     togglePet()
+//     toggleCutType()
+//     calculatePrice()
+//     setDefaultChoice()
+//     setCheckedParams({
+//         "figure": e.target.id,
+//         "size": "50x50",
+//     })
+// })
+// stickerset.addEventListener("click", (e) => {
+//     replaceSizes("stickerset_sizes")
+//     togglePet(true)
+//     setDefaultChoice()
+//     toggleCutType(true)
+//     setCheckedParams({
+//         "figure": e.target.id,
+//         "size": "A5ST",
+//         "cut": "each_one"
+//     })
+//     calculatePrice()
+// })
 
 dieCut.addEventListener("click", (e) => {
     toggleSmallSizes(true)
     calculatePrice()
     setCheckedParams(null, "cut", e.target.id)
-    setDefaultSize()
+    setDefaultChoice(e)
 })
 cutAtA4.addEventListener("click", (e) => {
     toggleSmallSizes(false)
