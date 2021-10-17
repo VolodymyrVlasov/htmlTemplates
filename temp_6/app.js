@@ -1,18 +1,3 @@
-const rounded = document.getElementById("rounded")
-const squared = document.getElementById("squared")
-const stickerset = document.getElementById("stickerset")
-
-const roundSizes = document.getElementById("round_sizes").children
-const squaredSizes = document.getElementById("squared_sizes").children
-const stickerSetsSizes = document.getElementById("stickerset_sizes").children
-
-const materials = document.getElementById("materials").children
-
-const dieCut = document.getElementById("each_one")
-const cutAtA4 = document.getElementById("sheet-A4")
-const cutAtA3 = document.getElementById("sheet-A3")
-const sizesCards = document.getElementById("sizes-cards").children
-
 let checkedParams = {
     figure: "rounded",
     size: "50mm",
@@ -21,6 +6,8 @@ let checkedParams = {
 }
 
 const replaceSizes = (id) => {
+    const sizesCards = document.getElementById("sizes-cards").children
+
     Object.values(sizesCards).forEach(cardNode => {
         if (cardNode.nodeName !== "P") {
             if (cardNode.id === id) {
@@ -42,6 +29,9 @@ const togglePet = (setDisable) => {
 }
 
 const toggleSmallSizes = (setDisable) => {
+    const roundSizes = document.getElementById("round_sizes").children
+    const squaredSizes = document.getElementById("squared_sizes").children;
+
     [roundSizes, squaredSizes].forEach(sizes => {
         Object.values(sizes).forEach((labelNode, index) => {
             let input = labelNode.firstElementChild
@@ -53,6 +43,9 @@ const toggleSmallSizes = (setDisable) => {
 }
 
 const toggleCutType = (onlyEachOne) => {
+    const dieCut = document.getElementById("each_one")
+    const cutAtA4 = document.getElementById("sheet-A4")
+    const cutAtA3 = document.getElementById("sheet-A3")
     if (onlyEachOne) {
         dieCut.checked = true
         cutAtA4.disabled = true
@@ -80,115 +73,73 @@ const setCheckedParams = (obj, key, value) => {
     }
     console.log(checkedParams)
 }
-const calculatePrice = () => {
 
+const setStickerShape = (shapeId, sizesId, calcParams, isPetDisable, onlyEachOne) => {
+    replaceSizes(sizesId)
+    togglePet(isPetDisable)
+    toggleCutType(onlyEachOne)
+    setDefaultChoice()
+    setCheckedParams(calcParams)
+    if (!isPetDisable) {
+        toggleSmallSizes(false)
+    }
 }
 
-const standardShape = ((shapeId, sizesId) => {
-    replaceSizes(sizesId)
-    togglePet()
-    calculatePrice()
-    setDefaultChoice()
-    toggleSmallSizes(false)
-    toggleCutType()
-    setCheckedParams({
-        "figure": shapeId,
-        "size": "50mm",
-    })
-})
+const setCutType = (e) => {
+    if (e.target.id === "each_one") {
+        toggleSmallSizes(true)
+        setDefaultChoice(e)
+        if (checkedParams.figure === "rounded") {
+            setCheckedParams({"cut": e.target.id, "size": "50mm"})
+        } else if (checkedParams.figure === "squared") {
+            setCheckedParams({"cut": e.target.id, "size": "50x50"})
+        }
+    } else {
+        toggleSmallSizes(false)
+    }
+}
 
 document.addEventListener("click", (e => {
     const id = e?.target.id
-
     switch (id) {
         case "rounded":
-            standardShape(id, "round_sizes")
+            setStickerShape(id, "round_sizes", {"figure": id, "size": "50mm", "cut": "sheet-A3"})
             break
         case "squared":
-            standardShape(id, "squared_sizes")
+            setStickerShape(id, "squared_sizes", {"figure": id, "size": "50x50", "cut": "sheet-A3"})
             break
         case "stickerset":
-            replaceSizes("stickerset_sizes")
-            togglePet(true)
-            setDefaultChoice()
-            toggleCutType(true)
-            setCheckedParams({
-                "figure": e.target.id,
-                "size": "A5ST",
-                "cut": "each_one"
-            })
-            calculatePrice()
+            setStickerShape(id, "stickerset_sizes", {"figure": id, "size": "A5ST", "cut": "each_one"},
+                true, true)
+            break
+        case "each_one":
+            setCutType(e)
+            break
+        case "sheet-A4":
+            setCutType(e)
+            break
+        case "sheet-A3":
+            setCutType(e)
             break
     }
-}))
-
-//
-// rounded.addEventListener("click", (e) => {
-//     replaceSizes("round_sizes")
-//     togglePet()
-//     calculatePrice()
-//     setDefaultChoice()
-//     toggleCutType()
-//     setCheckedParams({
-//         "figure": e.target.id,
-//         "size": "50mm",
-//     })
-// })
-// squared.addEventListener("click", (e) => {
-//     replaceSizes("squared_sizes")
-//     togglePet()
-//     toggleCutType()
-//     calculatePrice()
-//     setDefaultChoice()
-//     setCheckedParams({
-//         "figure": e.target.id,
-//         "size": "50x50",
-//     })
-// })
-// stickerset.addEventListener("click", (e) => {
-//     replaceSizes("stickerset_sizes")
-//     togglePet(true)
-//     setDefaultChoice()
-//     toggleCutType(true)
-//     setCheckedParams({
-//         "figure": e.target.id,
-//         "size": "A5ST",
-//         "cut": "each_one"
-//     })
-//     calculatePrice()
-// })
-
-dieCut.addEventListener("click", (e) => {
-    toggleSmallSizes(true)
     calculatePrice()
-    setCheckedParams(null, "cut", e.target.id)
-    setDefaultChoice(e)
-})
-cutAtA4.addEventListener("click", (e) => {
-    toggleSmallSizes(false)
-    calculatePrice()
-    setCheckedParams(null, "cut", e.target.id)
-})
+}));
 
-cutAtA3.addEventListener("click", (e) => {
-    toggleSmallSizes(false)
-    calculatePrice()
-    setCheckedParams(null, "cut", e.target.id)
-});
-
-
-[roundSizes, squaredSizes, stickerSetsSizes].forEach(sizes => {
-    Object.values(sizes).forEach(node => {
-        node.firstElementChild
-            .addEventListener("click", (e) => setCheckedParams(null, "size", e.target.id))
-    })
-})
-
-Object.values(materials).forEach(node => {
-    if (node.nodeName !== "P") {
-        node.firstElementChild
-            .addEventListener("click", (e) => setCheckedParams(null, "material", e.target.id)
-            )
+document.getElementById("sizes-cards").addEventListener("click", (e) => {
+    const target = e.target
+    if (!target.classList.contains("label") && target.id !== "sizes-cards" &&
+        target.id !== "round_sizes" && target.id !== "squared_sizes" && target.id !== "stickerset_sizes") {
+        setCheckedParams(null, "size", target.id)
     }
 })
 
+document.getElementById("materials").addEventListener("click", (e) => {
+    const target = e.target
+    if (target.nodeName !== "P" && !target.classList.contains("label")) {
+        setCheckedParams(null, "material", target.id)
+    }
+})
+
+const calculatePrice = () => {
+
+}

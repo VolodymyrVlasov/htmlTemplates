@@ -1,0 +1,130 @@
+const LS_KEY = "taskList"
+
+const taskCnt = document.getElementById("task-cnt")
+
+const renderFullTaskCard = (task) => {
+    return `<section class="popup_wrapper">
+                <form action="#" class="todo_card col-gap" id="${task.UUID}">
+                    <input name="taskTitle" class="task-title" type="text" placeholder="Title" value="${task.title}"/>
+                    <textarea name="taskContent" class="task-text">${task.content}</textarea>
+                    <div class="row row-gap">
+                        <button class="btn" id="delete-task-btn">Delete</button>
+                        <button class="btn" id="pin-task-btn">Pin</button>
+                        <button type="submit" class="btn" id="save-task-btn">Save</button>
+                    </div>
+                </form>
+            </section>`
+}
+
+const renderTaskList = (taskList = []) => {
+    taskCnt.innerHTML = taskList ? taskList.map(task => {
+            if (task.content === "" && task.title === "") return
+            return ` <div class="todo_card row row-gap" id="${task.UUID}">
+                        <h4 class="todo_card--title-s">${task.title}</h4>
+                        <p class="todo_card--text-s">${task.content}</p>
+                     </div>`
+        }).join("")
+        : `<p class="row empty-list ">You didn't create any task yet`
+}
+
+const removeNewTaskCard = () => document.getElementById("popup-new-task").remove()
+
+const renderNewTaskCard = () => {
+    const card = `<section class="popup_wrapper" id="popup-new-task">
+                <form aria-label="Form to create new task" action="#" class="popup col col-gap">
+                    <div class="row">
+                        <input aria-label="Task title" name="taskTitle" class="task-title" type="text" placeholder="Title">
+                        <button class="cancel" id="btn-close-popup">X</button>
+                    </div>
+                    <textarea aria-label="Task text content" name="taskContent" class="task-text"
+                              placeholder="Enter your task here"></textarea>
+                    <button type="submit" class="btn" id="btn-save-new-task">Save</button>
+                </form>
+            </section>`
+    document.body.insertAdjacentHTML("afterbegin", card)
+}
+
+const createTask = (formElems) => {
+    //todo: add  form validation
+    let newTask = {
+        UUID: UUID(),
+        title: formElems.taskTitle.value,
+        content: formElems.taskContent.value,
+        isPined: false,
+        timeStamp: Date.now()
+    }
+    console.table(newTask)
+    let lsData = JSON.parse(localStorage.getItem(LS_KEY)) || []
+    lsData.push(newTask)
+    localStorage.setItem(LS_KEY, JSON.stringify(lsData))
+    removeNewTaskCard()
+    renderTaskList(getTaskList())
+}
+
+const getTaskList = () => JSON.parse(localStorage.getItem(LS_KEY))
+
+const getTask = (uuid) => {
+    let lsData = JSON.parse(localStorage.getItem(LS_KEY)) || []
+    return lsData.filter(task => task.UUID === uuid)[0]
+}
+
+const editTask = (taskForm) => {
+    const id = taskForm.id
+    const form = taskForm.elements
+    const editedTask = {
+        UUID: id,
+        title: form.taskTitle.value,
+        content: form.taskContent.value,
+        timeStamp: Date.now()
+    }
+    taskForm.parentElement.remove()
+    console.table(editedTask)
+}
+
+const deleteTask = (taskUUID) => {
+
+}
+
+const deleteAllTasks = () => {
+    localStorage.clear()
+    renderNewTaskCard()
+}
+
+function UUID() {
+    return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
+        (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+    );
+}
+
+document.addEventListener("click", (e) => {
+    const targetId = e.target.id
+
+    switch (targetId) {
+        case "add-btn":
+            renderNewTaskCard()
+            break
+        case "btn-close-popup":
+            removeNewTaskCard()
+            break
+        case "delete-all-task-btn" :
+            deleteAllTasks()
+            break
+        case "save-task-btn":
+            e.preventDefault()
+            editTask(e.target.closest(".todo_card.col-gap"))
+            break
+        case "btn-save-new-task":
+            e.preventDefault()
+            createTask(e.target.closest(".popup.col.col-gap").elements)
+            break
+    }
+
+    if (e.target.closest(".todo_card.row.row-gap")) {
+        document.body.insertAdjacentHTML(
+            "afterbegin",
+            renderFullTaskCard(getTask(e.target.closest(".todo_card.row.row-gap").id)))
+    }
+})
+
+renderTaskList(getTaskList())
+

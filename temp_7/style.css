@@ -1,0 +1,431 @@
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+
+/* hebrew */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+
+/* vietnamese */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+
+/* hebrew */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+
+/* vietnamese */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    /*max-width: 320px;*/
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #4d4d4d;
+    color: #2F2F2F;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.row-gap > *:not(:last-child) {
+    margin-right: 16px;
+}
+
+.col-gap > *:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.row-big-gap > *:not(:last-child) {
+    margin-right: 24px;
+}
+
+.col-big-gap > *:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: darkgray;
+    color: #2F2F2F;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: 300ms;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #2F2F2F;
+}
+
+.header-cnt {
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    margin-bottom: 16px;
+    background-color: #e3e3e3;
+    height: 60px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.logo span {
+    font-weight: 700;
+    color: #D83E1B;
+}
+
+.menu {
+    /*position: relative;*/
+    background-color: black;
+    height: 2px;
+    width: 24px;
+    transition: 300ms;
+}
+
+.menu:focus {
+    transform: scale(1.01);
+}
+
+.menu:before {
+    position: absolute;
+    content: "";
+    background-color: black;
+    height: 2px;
+    width: 24px;
+    top: 20px;
+}
+
+.menu:after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    height: 2px;
+    width: 24px;
+    bottom: 20px;
+}
+
+.edit_todo_card {
+    padding: 12px;
+    background-color: #c2c2c2;
+    border-radius: 12px;
+}
+
+.todo_card {
+    width: 100%;
+    padding: 12px;
+    background-color: #c2c2c2;
+    border-radius: 12px;
+}
+
+.todo_card--title {
+    font-size: 24px;
+}
+
+.todo_card--text {
+    width: 100%;
+    padding: 4px 0 18px 0;
+    min-height: 90px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #6A6A6A;
+}
+
+.add-cnt {
+    position: absolute;
+    bottom: 15px;
+}
+
+.btn-add {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    width: calc(100% - 30px);
+    box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.2);
+    background-color: #F78065;
+    color: white;
+
+}
+
+.divider {
+    height: 100%;
+}
+
+.popup_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+.popup {
+    margin: auto auto;
+    background-color: lightgrey;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.task-title {
+    background-color: transparent;
+    width: 100%;
+    padding: 4px 0;
+    border: 0;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.todo_card--title-s {
+    display: flex;
+    align-items: flex-end;
+    clear: both;
+    overflow: hidden;
+    white-space: nowrap;
+    width: auto;
+}
+
+.todo_card--text-s {
+    flex: 1;
+    clear: both;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #6A6A6A;
+}
+
+.task-text {
+    display: flex;
+    background-color: transparent;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    padding: 4px 0 8px 0;
+    border: 0;
+    outline: none;
+    height: fit-content;
+    min-height: 90px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid;
+}
+
+.cancel {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: 0;
+    top: -22px;
+    right: -26px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.empty-list {
+    padding-top: 50px;
+    width: 100%;
+    justify-content: center;
+    color: white;
+}

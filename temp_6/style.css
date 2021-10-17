@@ -245,7 +245,7 @@ body {
     padding: 16px;
     background-color: white;
     border-radius: 12px;
-    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.05);
+    /*box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.05);*/
 }
 
 .card > p {
@@ -253,9 +253,6 @@ body {
     font-weight: 700;
 }
 
-.card label:not(:last-child) {
-    margin-bottom: 12px;
-}
 
 .sizes {
     display: none;
@@ -263,5 +260,13 @@ body {
 
 .sizes-active {
     display: flex;
+}
+
+.label {
+    width: 100%;
+    padding: 6px 0;
+}
+
+.label-active {
 }
 
