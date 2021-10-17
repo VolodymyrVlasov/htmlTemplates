@@ -1,6 +1,6 @@
 const LS_KEY = "taskList"
-
 const taskCnt = document.getElementById("task-cnt")
+let taskArray = JSON.parse(localStorage.getItem(LS_KEY)) || []
 
 const renderFullTaskCard = (task) => {
     return `<section class="popup_wrapper">
@@ -16,15 +16,13 @@ const renderFullTaskCard = (task) => {
             </section>`
 }
 
-const renderTaskList = (taskList = []) => {
-    taskCnt.innerHTML = taskList ? taskList.map(task => {
-            if (task.content === "" && task.title === "") return
-            return ` <div class="todo_card row row-gap" id="${task.UUID}">
+const renderTaskList = () => {
+    taskCnt.innerHTML = taskArray.length > 0 ? taskArray.map(task => {
+        return ` <div class="todo_card row row-gap" id="${task.UUID}">
                         <h4 class="todo_card--title-s">${task.title}</h4>
                         <p class="todo_card--text-s">${task.content}</p>
                      </div>`
-        }).join("")
-        : `<p class="row empty-list ">You didn't create any task yet`
+    }).join("") : `<p class="row empty-list ">You didn't create any task yet`
 }
 
 const removeNewTaskCard = () => document.getElementById("popup-new-task").remove()
@@ -44,24 +42,28 @@ const renderNewTaskCard = () => {
     document.body.insertAdjacentHTML("afterbegin", card)
 }
 
-const createTask = (formElems) => {
-    //todo: add  form validation
+const saveTasks = () => {
+    setTimeout(() => {
+        localStorage.setItem(LS_KEY, JSON.stringify(taskArray))
+        renderTaskList()
+    }, 0)
+}
+const createTask = (taskForm) => {
+    //todo: add form validation
+    if (!taskForm.taskTitle.value && !taskForm.taskContent.value) return
     let newTask = {
         UUID: UUID(),
-        title: formElems.taskTitle.value,
-        content: formElems.taskContent.value,
+        title: taskForm.taskTitle.value,
+        content: taskForm.taskContent.value,
         isPined: false,
         timeStamp: Date.now()
     }
-    console.table(newTask)
-    let lsData = JSON.parse(localStorage.getItem(LS_KEY)) || []
-    lsData.push(newTask)
-    localStorage.setItem(LS_KEY, JSON.stringify(lsData))
+    taskArray.push(newTask)
+    saveTasks()
     removeNewTaskCard()
-    renderTaskList(getTaskList())
 }
 
-const getTaskList = () => JSON.parse(localStorage.getItem(LS_KEY))
+const getTaskList = () => JSON.parse(localStorage.getItem(LS_KEY)) || []
 
 const getTask = (uuid) => {
     let lsData = JSON.parse(localStorage.getItem(LS_KEY)) || []
@@ -69,16 +71,21 @@ const getTask = (uuid) => {
 }
 
 const editTask = (taskForm) => {
-    const id = taskForm.id
-    const form = taskForm.elements
     const editedTask = {
-        UUID: id,
-        title: form.taskTitle.value,
-        content: form.taskContent.value,
+        title: taskForm.taskTitle.value,
+        content: taskForm.taskContent.value,
         timeStamp: Date.now()
     }
+    taskArray = taskArray.map(task => {
+        if (task.UUID === taskForm.id) {
+            return {...task, ...editedTask}
+        }
+        return task
+    })
+    console.table(taskArray)
+    saveTasks()
     taskForm.parentElement.remove()
-    console.table(editedTask)
+
 }
 
 const deleteTask = (taskUUID) => {
@@ -86,8 +93,9 @@ const deleteTask = (taskUUID) => {
 }
 
 const deleteAllTasks = () => {
+    taskArray.length = 0
     localStorage.clear()
-    renderNewTaskCard()
+    renderTaskList()
 }
 
 function UUID() {
@@ -95,6 +103,20 @@ function UUID() {
         (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
     );
 }
+
+document.addEventListener("submit", (e) => {
+    e.preventDefault()
+    switch (e.submitter.id) {
+        case "save-task-btn":
+            e.preventDefault()
+            editTask(e.target)
+            break
+        case"btn-save-new-task":
+            e.preventDefault()
+            createTask(e.target)
+            break
+    }
+})
 
 document.addEventListener("click", (e) => {
     const targetId = e.target.id
@@ -107,15 +129,7 @@ document.addEventListener("click", (e) => {
             removeNewTaskCard()
             break
         case "delete-all-task-btn" :
-            deleteAllTasks()
-            break
-        case "save-task-btn":
-            e.preventDefault()
-            editTask(e.target.closest(".todo_card.col-gap"))
-            break
-        case "btn-save-new-task":
-            e.preventDefault()
-            createTask(e.target.closest(".popup.col.col-gap").elements)
+            confirm("Clear all tasks?") ? deleteAllTasks() : null
             break
     }
 

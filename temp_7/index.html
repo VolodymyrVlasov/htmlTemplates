@@ -11,13 +11,15 @@
 <body>
 <header class="header-cnt container row">
     <a href="/htmlTemplates/temp_7/index.html" class="logo"><span>#</span>TO<span>DO</span></a>
-    <button class="btn" aria-label="menu" id="delete-all-task-btn">DELETE ALL</button>
+    <button class="btn-clear-all" aria-label="menu" id="delete-all-task-btn">X</button>
 </header>
-<section>
-    <div class="container col-gap" id="task-cnt" aria-label="container for task list"></div>
-</section>
-<span class="divider"></span>
-<button class="btn btn-add" id="add-btn">Add</button>
+<section class="root">
+    <div class="container col-gap root-cnt" id="task-cnt" aria-label="container for task list"></div>
+    <div class="container">
+        <button class="btn btn-add" id="add-btn">Add</button>
+    </div>
+</section class="root">
+
 <script src="./app.js"></script>
 </body>
 </html>
