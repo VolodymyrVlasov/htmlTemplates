@@ -48,6 +48,7 @@ const saveTasks = () => {
         renderTaskList()
     }, 0)
 }
+
 const createTask = (taskForm) => {
     //todo: add form validation
     if (!taskForm.taskTitle.value && !taskForm.taskContent.value) return

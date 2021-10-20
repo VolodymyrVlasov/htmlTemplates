@@ -8,7 +8,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
-
 /* cyrillic */
 @font-face {
     font-family: 'Open Sans';
@@ -19,7 +18,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-
 /* greek-ext */
 @font-face {
     font-family: 'Open Sans';
@@ -30,7 +28,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+1F00-1FFF;
 }
-
 /* greek */
 @font-face {
     font-family: 'Open Sans';
@@ -41,7 +38,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+0370-03FF;
 }
-
 /* hebrew */
 @font-face {
     font-family: 'Open Sans';
@@ -52,7 +48,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
 }
-
 /* vietnamese */
 @font-face {
     font-family: 'Open Sans';
@@ -63,7 +58,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
-
 /* latin-ext */
 @font-face {
     font-family: 'Open Sans';
@@ -74,7 +68,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 /* latin */
 @font-face {
     font-family: 'Open Sans';
@@ -85,7 +78,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 /* cyrillic-ext */
 @font-face {
     font-family: 'Open Sans';
@@ -96,7 +88,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
-
 /* cyrillic */
 @font-face {
     font-family: 'Open Sans';
@@ -107,7 +98,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-
 /* greek-ext */
 @font-face {
     font-family: 'Open Sans';
@@ -118,7 +108,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+1F00-1FFF;
 }
-
 /* greek */
 @font-face {
     font-family: 'Open Sans';
@@ -129,7 +118,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+0370-03FF;
 }
-
 /* hebrew */
 @font-face {
     font-family: 'Open Sans';
@@ -140,7 +128,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
 }
-
 /* vietnamese */
 @font-face {
     font-family: 'Open Sans';
@@ -151,7 +138,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
-
 /* latin-ext */
 @font-face {
     font-family: 'Open Sans';
@@ -162,7 +148,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 /* latin */
 @font-face {
     font-family: 'Open Sans';
@@ -173,7 +158,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 /* cyrillic-ext */
 @font-face {
     font-family: 'Open Sans';
@@ -184,7 +168,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
-
 /* cyrillic */
 @font-face {
     font-family: 'Open Sans';
@@ -195,7 +178,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-
 /* greek-ext */
 @font-face {
     font-family: 'Open Sans';
@@ -206,7 +188,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+1F00-1FFF;
 }
-
 /* greek */
 @font-face {
     font-family: 'Open Sans';
@@ -217,7 +198,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+0370-03FF;
 }
-
 /* hebrew */
 @font-face {
     font-family: 'Open Sans';
@@ -228,7 +208,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
 }
-
 /* vietnamese */
 @font-face {
     font-family: 'Open Sans';
@@ -239,7 +218,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
-
 /* latin-ext */
 @font-face {
     font-family: 'Open Sans';
@@ -250,7 +228,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');
     unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 /* latin */
 @font-face {
     font-family: 'Open Sans';
@@ -261,7 +238,6 @@
     src: url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 
 :root {
     --size-gap: 16px;
@@ -482,45 +458,7 @@ ol, ul {
     border: 1px solid #fff;
     background: #6A6A6A;
 }
-
-/* input range */
-/*input[type='range'] {*/
-/*    overflow: hidden;*/
-/*    -webkit-appearance: none;*/
-/*    border-radius: 999px;*/
-/*    border: 1px solid var(--color-light-gray);*/
-/*    transition: 0.3s;*/
-/*}*/
-
-/*input[type='range']::-webkit-slider-thumb {*/
-/*    width: 32px;*/
-/*    -webkit-appearance: none;*/
-/*    height: 12px;*/
-/*    border-radius: 999px;*/
-/*    cursor: ew-resize;*/
-/*    background: #fff;*/
-/*    border: 1px solid var(--color-theme);*/
-/*    box-shadow: -306px 0 0 300px var(--color-theme);*/
-/*}*/
-
-/*input[type='range']:hover,*/
-/*input[type='range']:focus {*/
-/*    outline: none;*/
-/*    border: 1px solid var(--color-theme);*/
-
-/*}*/
-
-/*input[type="range"]::-moz-range-progress {*/
-/*    background-color: var(--color-theme);*/
-/*}*/
-
-/*input[type="range"]::-moz-range-track {*/
-/*    background-color: #fff;*/
-/*}*/
-
-
 /* calculator */
-
 .calculator {
     width: 100%;
     padding: 40px 0;
@@ -536,8 +474,6 @@ ol, ul {
     padding: 40px 0 40px 40px;
     justify-content: space-between;
 }
-
-
 
 .range {
     width: 100%;
@@ -607,11 +543,7 @@ ol, ul {
 
 /* contact cards */
 .social {
-    justify-content: space-between;
     width: 100%;
-}
-
-.contact_card {
 }
 
 .contact_card:hover > span:before,
@@ -633,7 +565,6 @@ ol, ul {
     color: var(--color-theme);
 }
 
-
 .telegram:before {
     content: "";
     width: var(--size-icon);
@@ -643,7 +574,6 @@ ol, ul {
     top: 0;
     transition: 300ms;
 }
-
 
 .viber:before {
     content: "";
@@ -674,7 +604,6 @@ ol, ul {
     top: 0;
     transition: 300ms;
 }
-
 /* accordion */
 .accordion {
     display: flex;
@@ -779,10 +708,7 @@ ol, ul {
     opacity: 1;
     max-height: 500px;
 }
-
-
 /* price table*/
-
 .table_wrapper {
     width: 100%;
     overflow-x: scroll;
@@ -849,22 +775,13 @@ ol, ul {
 
 .material_card {
     flex: 1;
-
 }
-
-/*.material_card-description {*/
-/*    margin-top: -16px;*/
-/*    background-color: white;*/
-/*    padding: 16px;*/
-/*    border-radius: 0 0 12px 12px;*/
-/*}*/
 
 .img_wrapper {
     width: 100%;
     display: flex;
     overflow: hidden;
     border-radius: 12px;
-
 }
 
 .img_wrapper > img {
@@ -875,12 +792,9 @@ ol, ul {
     transition: 1s;
 }
 
-
 .img_wrapper > img:hover {
     transform: scale(4) translateX(-30%);
 }
-
-
 /* map section*/
 .contact_section {
     position: relative;
@@ -894,7 +808,6 @@ ol, ul {
 
 .contacts {
     position: absolute;
-
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -913,8 +826,6 @@ ol, ul {
     width: 400px;
     height: fit-content;
     background-color: #fff;
-    /*border: 1px solid var(--color-theme);*/
-
 }
 
 .contacts_card a:hover {
@@ -927,8 +838,6 @@ ol, ul {
     position: relative;
     border-radius: 12px;
     border: 1px solid;
-    /*border: 1px solid transparent;*/
-
     min-width: 120px;
 }
 
@@ -936,6 +845,179 @@ ol, ul {
     border: 1px solid var(--color-theme);
 }
 
+/* `xxl` applies to xx-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/*`xl` applies to x-large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* `lg` applies to large devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    :root {
+        --size-section-padding: 48px;
+        --size-gap: 40px;
+        --size-gap-bottom: 8px;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+
+    .row.row_gap {
+        flex-direction: column;
+    }
+}
+
+/*-------------------------------------------*/
+/* `md` applies to medium devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+/* `sm` applies to small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    :root {
+        --size-gap: 16px;
+        --size-big-gap: 28px;
+        --size-icon: 20px;
+
+        --size-container-width: 1240px;
+
+        --color-theme: #D83E1B;
+        --color-light-theme: #ffe8e3;
+        --color-light-light-theme: #FFF6F4;
+        --color-gray: #6E6E6E;
+        --color-light-gray: #eeeeee;
+        --color-light-light-gray: #fbfbfb;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .section {
+        padding: 20px 0;
+    }
+
+    .head-container {
+        width: 100%;
+        padding: 20px 15px;
+        background-image: none;
+        height: auto;
+    }
+
+    .reviews > ol {
+        flex-direction: row;
+    }
+
+    .text-60 {
+        font-size: 38px;
+        font-weight: bold;
+    }
+
+    .text-32 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .calculator {
+        padding: 0;
+    }
+
+    .inputs {
+        padding: 15px 0;
+        border: 0
+    }
+
+    .custom_range {
+        margin-bottom: 25px !important;
+    }
+
+    .summary {
+        padding: 15px 0;
+        flex-direction: row;
+    }
+
+    .summary > div {
+        flex: 1;
+        padding: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row-gap > *:not(:last-child) {
+        margin-bottom: var(--size-gap);
+    }
+
+    .row-b-gap > *:not(:last-child) {
+        margin-bottom: var(--size-big-gap);
+    }
+
+    .social {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .social > .row {
+        width: 50%;
+    }
+
+    .contact_card {
+        margin-bottom: 24px;
+    }
+
+    .a-btn {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 16px 48px 16px 16px;
+    }
+
+    .active > .a-panel {
+        padding: 16px;
+    }
+
+    .material_card {
+        width: 100%;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .contacts_card {
+        padding: 16px;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .contact_section {
+        background-color: var(--color-light-light-gray);
+    }
+
+    .contacts {
+        position: static;
+    }
+}
+
+/* `xsm` applies to x-small devices (iPhone 5/5s/SE, equals to 320px) */
+@media (max-width: 320px) {
+
+}
 
 
 
