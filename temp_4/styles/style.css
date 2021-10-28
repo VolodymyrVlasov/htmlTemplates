@@ -529,69 +529,6 @@ ol, ul {
     color: var(--color-theme)
 }
 
-/* contact cards */
-.social {
-    width: 100%;
-}
-
-.contact_card:hover > span:before,
-.contact_card:focus > span:before {
-    transform: scale(1.7);
-    outline: none;
-}
-
-.contact_card > u {
-    color: var(--color-theme);
-}
-
-.contact_card > span {
-    display: flex;
-    position: relative;
-    padding-top: 34px;
-    margin-bottom: 24px;
-    font-size: 24px;
-    color: var(--color-theme);
-}
-
-.telegram:before {
-    content: "";
-    width: var(--size-icon);
-    height: var(--size-icon);
-    background: url("../img/icon-telegram.svg") no-repeat center / cover;
-    position: absolute;
-    top: 0;
-    transition: 300ms;
-}
-
-.viber:before {
-    content: "";
-    width: var(--size-icon);
-    height: var(--size-icon);
-    background: url("../img/icon-viber.svg") no-repeat center / cover;
-    position: absolute;
-    top: 0;
-    transition: 300ms;
-}
-
-.email:before {
-    content: "";
-    width: var(--size-icon);
-    height: var(--size-icon);
-    background: url("../img/icon-email.svg") no-repeat center / cover;
-    position: absolute;
-    top: 0;
-    transition: 300ms;
-}
-
-.phone:before {
-    content: "";
-    width: var(--size-icon);
-    height: var(--size-icon);
-    background: url("../img/icon-tel.svg") no-repeat center / cover;
-    position: absolute;
-    top: 0;
-    transition: 300ms;
-}
 /* accordion */
 .accordion {
     display: flex;
@@ -960,18 +897,18 @@ ol, ul {
         margin-bottom: var(--size-big-gap);
     }
 
-    .social {
-        flex-direction: row;
-        width: 100%;
-    }
+    /*.social {*/
+    /*    flex-direction: row;*/
+    /*    width: 100%;*/
+    /*}*/
 
-    .social > .row {
-        width: 50%;
-    }
+    /*.social > .row {*/
+    /*    width: 50%;*/
+    /*}*/
 
-    .contact_card {
-        margin-bottom: 24px;
-    }
+    /*.contact_card {*/
+    /*    margin-bottom: 24px;*/
+    /*}*/
 
     .a-btn {
         white-space: nowrap;
