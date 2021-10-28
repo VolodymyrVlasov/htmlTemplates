@@ -1,10 +1,3 @@
-//@ts-check
-'use strict'
-
-let a = 10
-a = "fe"
-
-
 const accordion = (elem) => {
     document.addEventListener('click', (e) => {
         const target = e.target
