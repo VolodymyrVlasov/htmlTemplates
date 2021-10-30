@@ -228,6 +228,7 @@
     --size-gap: 16px;
     --size-big-gap: 48px;
     --size-icon: 20px;
+    --size-border-radius: 12px;
 
     --size-container-width: 1240px;
 
@@ -829,8 +830,9 @@ ol, ul {
     }
 
     .container {
-        max-width: 100%;
+        max-width: 1240px;
         padding: 0 15px;
+        margin: 0 auto;
     }
 
     .section {
@@ -896,19 +898,6 @@ ol, ul {
     .row-b-gap > *:not(:last-child) {
         margin-bottom: var(--size-big-gap);
     }
-
-    /*.social {*/
-    /*    flex-direction: row;*/
-    /*    width: 100%;*/
-    /*}*/
-
-    /*.social > .row {*/
-    /*    width: 50%;*/
-    /*}*/
-
-    /*.contact_card {*/
-    /*    margin-bottom: 24px;*/
-    /*}*/
 
     .a-btn {
         white-space: nowrap;
