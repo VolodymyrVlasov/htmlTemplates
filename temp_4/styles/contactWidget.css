@@ -113,8 +113,14 @@
 /*-------------------------------------------*/
 /* `md` applies to medium devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+
     .contact-widget--card > p {
         display: none;
+    }
+
+    .contact-widget--card > span {
+        padding-top: 28px;
+        margin-bottom: 8px;
     }
 }
 
@@ -123,7 +129,11 @@
     .contact-widget--wrapper {
         flex-direction: column;
         width: 100%;
+    }
 
+
+    .calculator.row {
+       flex-direction: column-reverse;
     }
 
     .contact-widget--wrapper > div:not(:last-child) {
@@ -132,11 +142,6 @@
 
     .contact-widget--wrapper a:not(:last-child) {
         margin-right: var(--size-small-gap);
-    }
-
-    .contact-widget--card > p {
-        display: block;
-        /*font-size: var(--size-small-font-size);*/
     }
 
     .contact-widget--card {
@@ -164,10 +169,9 @@
         border-radius: var(--size-border-radius);
     }
 
-    .contact-widget--card > p {
-        display: none;
-    }
-
+    /*.contact-widget--card > p {*/
+    /*    display: none;*/
+    /*}*/
     .contact-widget--wrapper-half {
         flex-direction: column;
     }
@@ -181,14 +185,14 @@
         color: black;
     }
 
-    .contact-widget--card > span {
-        padding-top: 0;
-        margin-bottom: 4px;
-    }
-
     .viber:before, .email:before,
     .phone:before, .telegram:before {
         display: none;
+    }
+
+    .contact-widget--card > span {
+        padding-top: 0;
+        margin-bottom: 4px;
     }
 }
 

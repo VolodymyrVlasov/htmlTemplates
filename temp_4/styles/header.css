@@ -41,14 +41,20 @@
 
 .main_menu > li:not(:last-child) {
     border-right: 1px solid var(--color-light-gray);
+    margin-right: 16px;
 }
 
-.main_menu > li > a:not(:last-child) {
+.main_menu > .menu_item:not(:last-child) > a {
     padding-right: 32px;
 }
 
+
 .mob-menu-btn {
     display: none;
+}
+
+.mob-menu-btn:focus {
+    pointer-events: none;
 }
 
 .mob-menu-wrapper:hover >,
@@ -65,16 +71,16 @@
     visibility: visible;
     transform: rotateX(0deg);
     opacity: 1;
+    transition:var(--time-tr-time);
 }
 
 .menu_item--link {
-    padding: 24px 32px 24px;
-    transition: var(--time-tr-time);
+    padding: 24px 0 24px 16px;
+
 }
 
 .menu_item--link:hover {
     color: var(--color-theme);
-    transform: scale(1.05);
 }
 
 .drop_down_wrapper {
@@ -88,7 +94,9 @@
     background-color: white;
     padding: 32px 0;
     width: 100%;
-    transition: var(--time-tr-time);
+    transform: rotateX(90deg);
+    transform-origin: top;
+    /*transxition: var(--time-tr-time);*/
     box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.15);
 
 }
@@ -229,9 +237,10 @@
         padding: 24px 12px 24px;
     }
 
-    .main_menu > li > a:not(:last-child) {
-        padding-right: 12px;
-    }
+    /*.main_menu > li > a:not(:last-child) {*/
+    /*    padding-right: 6px;*/
+    /*    margin-right: 6px;*/
+    /*}*/
 
     .drop_down_container > ul {
         width: 50%;
@@ -266,12 +275,18 @@
         visibility: visible;
         opacity: 1;
         position: static;
+
+
     }
 
     .drop_down_container,
     .header--container {
         max-width: 100%;
         padding: 0 15px;
+    }
+
+    .mob-menu-wrapper:focus-within > .mob-menu-btn {
+        background-position: right;
     }
 
     .mob-menu-wrapper:focus-within > .main_menu {
@@ -303,12 +318,6 @@
         width: 100%;
     }
 
-    /*.sub_link {*/
-    /*    width: 100%;*/
-    /*}*/
-    /*.sub_link * {*/
-    /*    width: 100%;*/
-    /*}*/
     .menu_item--link:focus,
     .menu_item--link:hover {
         color: var(--color-theme);
@@ -338,7 +347,9 @@
 
 /* `xsm` applies to x-small devices (iPhone 5/5s/SE, equals to 320px) */
 @media (max-width: 320px) {
-
+    .main_menu {
+        box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.15);
+    }
 }
 
 
