@@ -143,7 +143,7 @@ ol, ul {
     z-index: 1;
 }
 
-.custom_range {
+.custom_input {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -152,13 +152,13 @@ ol, ul {
     position: relative;
 }
 
-.custom_range > label {
+.custom_input-label {
     margin-bottom: 55px;
-    padding-left: 16px;
+    padding-left: 6px;
     color: var(--color-gray);
 }
 
-.custom_range > span {
+.custom_input > span {
     display: inline-flex;
     justify-content: center;
     line-height: 100%;
@@ -171,7 +171,7 @@ ol, ul {
     transform: translateX(6px);
 }
 
-.custom_range > input {
+.custom_input-input--range {
     width: 100%;
     appearance: none;
     -webkit-appearance: none;
@@ -181,7 +181,7 @@ ol, ul {
     background: linear-gradient(90deg, var(--color-theme) 50%, var(--color-light-gray) 50%);
 }
 
-.custom_range > input::-webkit-slider-thumb {
+.custom_input-input--range::-webkit-slider-thumb {
     appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
@@ -192,7 +192,7 @@ ol, ul {
     background: #fff;
 }
 
-.custom_range > input::-moz-range-thumb {
+.custom_input-input--range::-moz-range-thumb {
     appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
@@ -207,6 +207,11 @@ ol, ul {
 .calculator {
     width: 100%;
     padding: 40px 0;
+}
+
+.custom_input-input--number {
+    width: 100%;
+    height: 25px;
 }
 
 .inputs {
@@ -464,9 +469,10 @@ ol, ul {
     text-align: left;
 }
 
-/*.material_card {*/
-/*    flex: 1;*/
-/*}*/
+.material_card {
+    width: calc(25% - var(--size-big-gap));
+}
+
 
 .img_wrapper {
     width: 100%;
@@ -505,7 +511,6 @@ ol, ul {
     z-index: 10;
     flex-direction: row-reverse;
     align-items: center;
-    pointer-events: none;
     top: 0;
     right: 0;
     bottom: 0;
@@ -583,9 +588,10 @@ ol, ul {
     }
 
     .price {
-        font-size: 18px;
-        padding: 8px;
+        font-size: 22px;
+        padding: 18px;
     }
+
 }
 
 /*-------------------------------------------*/
@@ -640,7 +646,7 @@ ol, ul {
         border: 0
     }
 
-    .custom_range {
+    .custom_input {
         margin-bottom: 25px !important;
     }
 
