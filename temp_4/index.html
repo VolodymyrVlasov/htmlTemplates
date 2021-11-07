@@ -265,21 +265,23 @@
             <p>Оберіть параметри потрібної продукції для орієнтовного розрахунку вартості та термінів</p>
             <div id="calculator" class="calculator row">
                 <div class="inputs col col-b-gap border-right">
-                    <div class="range row row-gap">
-                        <div class="custom_input" id="input-width">
-                            <span for="input_range-width" id="input_label-width" class="text-16--bold">0</span>
-                            <label aria-label="Обери ширину у самтиметрах" class="custom_input-label"
-                                   for="input_range-width">Ширина (см)</label>
-                            <input type="range" id="input_range-width" class="custom_input-input--range" min="0"
-                                   max="100" value="40"/>
-                        </div>
+                    <div class="range row row-b-gap">
                         <div class="custom_input" id="input-height">
-                            <span for="input_range-height" class="label">0</span>
+                            <span for="input_range-height" class="label">40</span>
                             <label for="input_range-height" class="custom_input-label"
                                    aria-label="Обери ширину у самтиметрах">Довжина (см)</label>
-                            <input type="range" id="input_range-height" class="custom_input-input--range" min="0"
-                                   max="100" value="60"/>
+                            <input type="range" id="input_range-height" class="custom_input-input--range" min="10"
+                                   max="300" value="60"/>
                         </div>
+
+                        <div class="custom_input" id="input-width">
+                            <span for="input_range-width" id="input_label-width" class="text-16--bold">60</span>
+                            <label aria-label="Обери ширину у самтиметрах" class="custom_input-label"
+                                   for="input_range-width">Ширина (см)</label>
+                            <input type="range" id="input_range-width" class="custom_input-input--range" min="10"
+                                   max="100" value="40"/>
+                        </div>
+
                         <div class="custom_number" id="input-amount">
                             <label for="amount" class="custom_input-label">Кількість (шт)</label>
                             <div class="custom_number-wrapper">
@@ -290,7 +292,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="material-quality row row-gap">
+                    <div class="material-quality row row-b-gap">
                         <div class="select col">
                             <label for="material">Матеріал</label>
                             <select name="material" id="material" aria-label="Обери матеріал наліпки">
@@ -316,9 +318,12 @@
                     </div>
                     <div class="col col-gap">
                         <label for="price">Варстіть:</label>
-                        <strong id="price" class="price">210 грн</strong>
+                        <strong id="price" class="price">130 грн</strong>
                     </div>
                 </div>
+            </div>
+            <div>
+                <p>*Мінімальна вартість замовлення дорівню вартості 0.5м² від обраного матеріалу та роздільної здатності друку</p>
             </div>
         </div>
     </section>

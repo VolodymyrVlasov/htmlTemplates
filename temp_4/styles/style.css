@@ -147,7 +147,7 @@ ol, ul {
 .custom_number {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .custom_number-wrapper {
@@ -638,7 +638,7 @@ input[type=number]::-webkit-outer-spin-button {
 
     .price {
         font-size: 22px;
-        padding: 18px;
+        padding: 8px 18px;
     }
 
 }

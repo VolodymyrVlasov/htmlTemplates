@@ -1,4 +1,4 @@
-const calcRequest = {
+const product = {
     width: 40,
     height: 60,
     amount: 1,
@@ -31,19 +31,19 @@ const map = (x, in_min, in_max, out_min, out_max) => {
     return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
 }
 
-const customRange = (id, thumbSize) => {
+const customRange = (id, thumbSize, initValue) => {
     const inputCnt = document.getElementById(id)
     let inputNode = inputCnt.lastElementChild
     const labelNode = inputCnt.firstElementChild
     const thumbHalfSize = thumbSize * 0.5
     const from = Number(inputNode.min)
     const to = Number(inputNode.max)
-    const inputWidth = Math.floor(inputNode.offsetWidth)
 
     const changeRangeUI = () => {
-        const value = Number(inputCnt.lastElementChild.value)
-        const labelCenterX = labelNode.offsetWidth * 0.5
+        const inputWidth = Math.floor(inputNode.offsetWidth)
+        const value = Number(inputCnt.lastElementChild.value) || initValue
         labelNode.innerHTML = String(value)
+        const labelCenterX = labelNode.offsetWidth * 0.5
         let gradientPosition = map(value, from, to, 0, 100)
         let labelPosition = map(value, from, to, 0, inputWidth)
         labelPosition = (value > to * 0.5) ?
@@ -54,62 +54,95 @@ const customRange = (id, thumbSize) => {
         labelNode.style.transform = `translateX(${labelPosition}px)`
     }
 
+    changeRangeUI()
     inputCnt.addEventListener("input", () => changeRangeUI())
 }
 
 const price = {
     RitramaMatte: {
-        "720p": [210, 190, 160],
+        "720p": [210, 160, 130],
         "1440p": [260, 210, 190]
     },
     RitramaGlossy: {
-        "720p": [210, 190, 160],
+        "720p": [210, 160, 130],
         "1440p": [260, 210, 190]
     },
     RitramaBlackout: {
         "720p": [210, 190, 160],
-        "1440p": [260, 210, 190]
+        "1440p": [290, 260, 190]
     },
     RitramaTransparent: {
-        "720p": [210, 190, 160],
-        "1440p": [260, 210, 190]
+        "720p": [210, 160, 130],
+        "1440p": [250, 210, 190]
     }
 }
 
 const calculatePrice = () => {
-    const outNode = document.getElementById("price")
-    let sq = (calcRequest.width * calcRequest.height) / 10000
-    console.table(price[calcRequest["material"]][[calcRequest["quality"]]][0], sq)
-    calcRequest.price = sq * price[calcRequest["material"]][[calcRequest["quality"]]][0] * calcRequest.amount
-    outNode.innerText = `${calcRequest.price.toFixed(0)} грн`
+
+    const getPriceIndex = () => {
+        if (product.printingSquare < 3) {
+            return 0
+        } else if (product.printingSquare >= 3 && product.printingSquare < 10) {
+            return 1
+        } else {
+            return 2
+        }
+    }
+
+    const getPrintingSquare = () => {
+        console.clear()
+        const ROLL = product.printingWidth = 100
+        product.printingHeight = product.height
+        const MIN_SQUARE = 0.5
+        if (product.height > ROLL && product.amount > 1) {
+            let pcsPerRoll = Math.floor(ROLL / product.width)
+            if (pcsPerRoll <= product.amount) {
+                product.printingHeight = product.height * Math.ceil(product.amount / pcsPerRoll)
+            } else {
+                product.printingHeight = product.height
+            }
+            product.printingSquare = Number(((product.printingHeight * product.printingWidth) / 10000).toFixed(2))
+        } else if (product.height <= ROLL && product.width < product.height) {
+            product.printingHeight = product.width
+            product.printingSquare = ((product.printingWidth * product.printingHeight) / 10000 * product.amount).toFixed(2)
+        } else {
+            product.printingSquare = ((product.printingWidth * product.height) / 10000 * product.amount).toFixed(2)
+        }
+        product.printingSquare = product.printingSquare < MIN_SQUARE ? MIN_SQUARE : product.printingSquare
+        return product.printingSquare
+    }
+
+    product.price = getPrintingSquare() * price[product.material][product.quality][getPriceIndex()]
+    document.getElementById("price").innerText = `${product.price.toFixed(0)} грн`
+
+    console.table(product)
 }
 
 const calculateTime = () => {
-    console.log()
 }
 
 document.getElementById("calculator").addEventListener("change", (e) => {
     const target = e.target
-    console.log(e.target.id)
     switch (target.id) {
         case "input_range-height":
-            calcRequest.height = Number(target.value)
+            product.height = Number(target.value)
             break
         case "input_range-width":
-            calcRequest.width = Number(target.value)
-            break
-        case "amount":
-            calcRequest.amount = Number(target.value)
+            product.width = Number(target.value)
             break
         case "material":
-            calcRequest.material = target.value
+            product.material = target.value
             break
         case "quality":
-            calcRequest.quality = target.value
+            product.quality = target.value
             break
         case "amount":
             if (Number(target.value) > 100) {
-                target.value = calcRequest.amount = 100
+                target.value = product.amount = 100
+            } else if (Number(target.value) <= 0) {
+                target.value = product.amount = 1
+            } else {
+                product.amount = Number(target.value)
             }
             break
     }
@@ -119,13 +152,13 @@ document.getElementById("calculator").addEventListener("change", (e) => {
 
 const changeAmount = (operation) => {
     const amountInput = document.getElementById("amount")
-    let value = amountInput.value
+    let value = Number(amountInput.value)
     if (operation === "minus" && value > 1) {
         value--
     } else if (operation === "plus" && value < 100) {
         value++
     }
-    amountInput.value = calcRequest.amount = value
+    amountInput.value = product.amount = Number(value)
     calculatePrice()
 }
 
@@ -141,7 +174,7 @@ document.getElementById("calculator").addEventListener("click", (e) => {
     }
 })
 
-customRange("input-height", 32)
-customRange("input-width", 32)
+customRange("input-height", 32, 40)
+customRange("input-width", 32, 60)
 
 
