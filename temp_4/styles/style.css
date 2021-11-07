@@ -120,6 +120,7 @@ ol, ul {
     gap: 8px
 }
 
+
 .reviews:hover,
 .reviews:focus {
     transform: scale(1.1);
@@ -141,6 +142,58 @@ ol, ul {
     right: -50px;
     opacity: 0.95;
     z-index: 1;
+}
+
+.custom_number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom_number-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -13px;
+    min-width: 120px;
+}
+
+.custom_number-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 28px;
+    height: 28px;
+    outline: none;
+    border-radius: 16px;
+    border: 1px solid var(--color-theme);
+    color: var(--color-theme);
+    font-size: 32px;
+    transition: var(--time-tr-time);
+}
+
+.custom_number-btn:hover {
+    background: var(--color-theme);
+    color: #fff;
+}
+
+.custom_input-input--number {
+    width: 50px;
+    font-size: 24px;
+    text-align: center;
+    border: none;
+    color: var(--color-theme);
+}
+
+.custom_input-input--number:focus{
+    border: none;
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
 }
 
 .custom_input {
@@ -209,10 +262,6 @@ ol, ul {
     padding: 40px 0;
 }
 
-.custom_input-input--number {
-    width: 100%;
-    height: 25px;
-}
 
 .inputs {
     flex: 4.5;

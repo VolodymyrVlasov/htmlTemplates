@@ -80,8 +80,8 @@ const calculatePrice = () => {
     const outNode = document.getElementById("price")
     let sq = (calcRequest.width * calcRequest.height) / 10000
     console.table(price[calcRequest["material"]][[calcRequest["quality"]]][0], sq)
-    calcRequest.price = sq * price[calcRequest["material"]][[calcRequest["quality"]]][0]
-    outNode.innerText = calcRequest.price
+    calcRequest.price = sq * price[calcRequest["material"]][[calcRequest["quality"]]][0] * calcRequest.amount
+    outNode.innerText = `${calcRequest.price.toFixed(0)} грн`
 }
 
 const calculateTime = () => {
@@ -90,7 +90,7 @@ const calculateTime = () => {
 
 document.getElementById("calculator").addEventListener("change", (e) => {
     const target = e.target
-
+    console.log(e.target.id)
     switch (target.id) {
         case "input_range-height":
             calcRequest.height = Number(target.value)
@@ -107,9 +107,38 @@ document.getElementById("calculator").addEventListener("change", (e) => {
         case "quality":
             calcRequest.quality = target.value
             break
+        case "amount":
+            if (Number(target.value) > 100) {
+                target.value = calcRequest.amount = 100
+            }
+            break
     }
     calculatePrice()
     calculateTime()
+})
+
+const changeAmount = (operation) => {
+    const amountInput = document.getElementById("amount")
+    let value = amountInput.value
+    if (operation === "minus" && value > 1) {
+        value--
+    } else if (operation === "plus" && value < 100) {
+        value++
+    }
+    amountInput.value = calcRequest.amount = value
+    calculatePrice()
+}
+
+document.getElementById("calculator").addEventListener("click", (e) => {
+    const target = e.target
+    switch (target.id) {
+        case "amount-minus":
+            changeAmount("minus")
+            break
+        case "amount-plus":
+            changeAmount("plus")
+            break
+    }
 })
 
 customRange("input-height", 32)
