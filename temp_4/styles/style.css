@@ -191,10 +191,14 @@ ol, ul {
     outline: none;
 }
 
+input[type=number],
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
+    -moz-appearance: textfield;
 }
+
+
 
 .custom_input {
     display: flex;
@@ -228,6 +232,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
     appearance: none;
     -webkit-appearance: none;
+    -moz-appearance: none;
     height: 4px;
     margin: 0;
     border-radius: 1px;
@@ -245,16 +250,19 @@ input[type=number]::-webkit-outer-spin-button {
     background: #fff;
 }
 
+
 .custom_input-input--range::-moz-range-thumb {
     appearance: none;
     -webkit-appearance: none;
+    -moz-appearance: none;
     cursor: pointer;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    background: #6A6A6A;
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    border: 2px solid var(--color-theme);
+    background: #fff;
 }
+
 
 /* calculator */
 .calculator {
@@ -302,6 +310,24 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 12px;
     cursor: pointer;
     transition: 300ms;
+    position: relative;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.select::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: linear-gradient(-45deg, var(--color-gray) 50%, white 50%);
+    position: absolute;
+    right: 22px;
+    top: 24px;
+    transform: rotate(45deg);
 }
 
 .select > label {
@@ -456,7 +482,6 @@ input[type=number]::-webkit-outer-spin-button {
 /* price table*/
 .table_wrapper {
     width: 100%;
-    overflow-x: scroll;
 }
 
 .table {
@@ -540,7 +565,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .img_wrapper > img:hover {
-    transform: scale(4) translateX(-30%);
+    transform: scale(2) translateX(10%) translateY(-15%);
 }
 
 /* map section*/
@@ -760,6 +785,11 @@ input[type=number]::-webkit-outer-spin-button {
         margin-right: var(--size-gap);
     }
 
+    .table_wrapper {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
 }
 
 /* `xsm` applies to x-small devices (iPhone 5/5s/SE, equals to 320px) */
@@ -786,7 +816,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 }
-
 
 
 
