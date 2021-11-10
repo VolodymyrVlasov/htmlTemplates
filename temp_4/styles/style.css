@@ -547,7 +547,6 @@ select {
     width: calc(25% - var(--size-big-gap));
 }
 
-
 .img_wrapper {
     width: 100%;
     display: flex;
@@ -571,7 +570,6 @@ select {
 /* map section*/
 .contact_section {
     position: relative;
-    /*pointer-events: none;*/
 }
 
 .map {
@@ -665,7 +663,6 @@ select {
         font-size: 22px;
         padding: 8px 18px;
     }
-
 }
 
 /*-------------------------------------------*/
@@ -789,7 +786,6 @@ select {
         width: 100%;
         overflow-x: scroll;
     }
-
 }
 
 /* `xsm` applies to x-small devices (iPhone 5/5s/SE, equals to 320px) */
@@ -813,8 +809,6 @@ select {
         width: 100%;
         margin-bottom: var(--size-big-gap);
     }
-
-
 }
 
 
