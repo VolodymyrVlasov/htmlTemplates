@@ -6,8 +6,7 @@
           content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta name="description" content="Сайт об HTML и создании сайтов">
     <meta name="Keywords"
-          content="Печать на оракале, печать на пленке, большая самоклейка, самоклейка А0,
-          наклейка А2, больгая круглая наклейка, ритрама, ritrama, ri-jet, стикерпаки">
+          content="Печать на оракале, печать на пленке, заказать печать на оракале, заказать печать на пленке виниловой, виниловые наклеки заказать, печать на виниле,  большая самоклейка, самоклейка А0, наклейка А2, большая круглая наклейка, печать стикерпаки, печать стикер паков, печать стикер сетов, печать набор наклеек, заказать стикер паки, заказать стикерпаки, заказать набор наклеек">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/typography.css">
     <link rel="stylesheet" href="./styles/header.css">
@@ -252,7 +251,7 @@
                                 <li aria-label="review: 5 star"></li>
                                 <li aria-label="review: 5 star"></li>
                             </ol>
-                            <span>272 reviews on Google</span>
+                            <span>Google</span>
                         </a>
                     </div>
                 </div>
@@ -285,10 +284,12 @@
                         <div class="custom_number" id="input-amount">
                             <label for="amount" class="custom_input-label">Кількість (шт)</label>
                             <div class="custom_number-wrapper">
-                                <button type="button" id="amount-minus" class="custom_number-btn">&#45;</button>
+                                <button type="button" id="amount-minus" class="custom_number-btn minus"
+                                        aria-label="зменшити кількість на 1"></button>
                                 <input type="number" value="1" min="1" max="100"
                                        id="amount" class="custom_input-input--number">
-                                <button type="button" id="amount-plus" class="custom_number-btn">+</button>
+                                <button type="button" id="amount-plus" class="custom_number-btn plus"
+                                        aria-label="збільшити кількість на 1"></button>
                             </div>
                         </div>
                     </div>
@@ -369,23 +370,24 @@
             <h3 class="text-32">Питання та відповіді</h3>
             <dl class="accordion">
                 <div class="a-container">
-                    <dt class="a-btn" tabindex="0">Що ознає друк 720 / 1440?<span class="a-btn-ico"></span>
+                    <dt class="a-btn" tabindex="0">Що означає друк 720 / 1440?<span class="a-btn-ico"></span>
                     </dt>
                     <dd class="a-panel">
-                        Правльно називати повну назву 720 dpi, 1440 dpi. DPI - dots per inch (точок на
+                        Повна назва 720 dpi, 1440 dpi. DPI - dots per inch (точок на
                         дюйм).
-                        Саме скільки точок чорнила має впасти наматеріал щоб задрукувати 1 дюйм. Постери друкують у
-                        720 dpi - досатній розмір краплі щоб не бачити “зерно” із відстані в 1 метр. 1440 dpi - досить
-                        висока якість яка використовуються при друці стіперпаків та малих вінілових наліпок розміром
-                        до А3 формату.
+                        Саме скільки точок чорнила має впасти на матеріал щоб задрукувати 1 дюйм (25.4 мм). Постери
+                        друкують у
+                        720 dpi - досатній розмір краплі щоб не бачити “зерно” із відстані в 1 метр. 1440 dpi - висока
+                        якість яка використовуються для друку стіперпаків та малих вінілових наліпок розміром
+                        до А2 формату з великою деталізацією.
                     </dd>
                 </div>
                 <div class="a-container">
                     <dt class="a-btn" tabindex="0">Які вимоги до макетів?<span class="a-btn-ico"></span></dt>
                     <dt class="a-panel">
-                        Макети подаются у настуних форматах: pdf, tif, jpg. Профіль: sRGB або CMYK.
-                        Роздільна
-                        здатність: стікерпаки та малі наліпки 450 / 300 dpi, А1 та більше - 200 dpi
+                        Макети подаются у настуних форматах: pdf, tif, jpg. Кольорова модель: CMYK.
+                        Роздільна здатність: стікерпаки та малі наліпки 450 / 300 dpi, А1 та більше - 200 dpi.
+                        Товщина ліній не менше 0.1 мм на білому фоні, та не менше 0.25 мм на кольоровому фоні.
                         Для стікерпаків та наліпок із плоттреную порізкою обов'язковий контур порізки винесений на
                         окремий шар.
                     </dt>
@@ -395,8 +397,7 @@
                             class="a-btn-ico"></span></dt>
                     <dd class="a-panel">
                         В залежності від замовлення та завантаженості виробництва на момент замовлення, термін
-                        виконання
-                        може складати від 30 хв до 1 дня. Проте актуальну інформацію краще запитайте у
+                        виконання може складати від 30 хв до 1 дня. Проте актуальну інформацію краще запитайте у
                         менеджера
                     </dd>
                 </div>
@@ -406,19 +407,19 @@
                     </dt>
                     <dd class="a-panel">
                         Все залежить від наданого файлу. Векторе зображення не має обмежень в розмірі, растрове
-                        (фото) має певні обмеження. Знову ж таки - скидайте на пошту або у месенджери :)
+                        (фото) має певні обмеження. Розмір у пікселях не завжди є показником якості, потрібно також візуально оцінити зображення.
+                        Знову ж таки - скидайте на пошту або у месенджери :)
                     </dd>
                 </div>
                 <div class="a-container">
                     <dt class="a-btn" tabindex="0">Як довго тримається друк на плівці?<span class="a-btn-ico"></span>
                     </dt>
                     <dd class="a-panel">
-                        Виробник чорнил дає гарантію для викорстання екстер’єрного виористання - 2 роки, для
-                        інтер’єрного - термін ен обмежений. Проте варто  зауважити що наліпки на ноутбук “живуть”
+                        Виробник чорнил дає гарантію для екстер’єрного виористання - 1 рік, для
+                        інтер’єрного - термін не обмежений. Проте варто  зауважити що наліпки на ноутбуці “живуть”
                         значно довше ніж наліпки на смартфоні (останні обов’язково потрібно ламінувати) та значно
-                        меньше
-                        наклейок на вікна. Чому? Все просто! Вікно не кладують і не дістають із сумки / рюкзака по
-                        декілька раз на день :)
+                        менше ніж накліпки на вікнах. Чому? Все просто! Вікно не кладують і не дістають із сумки  чи кишені по
+                        декілька разів на день :)
                     </dd>
                 </div>
                 <div class="a-container">
@@ -426,16 +427,14 @@
                             class="a-btn-ico"></span></dt>
                     <dd class="a-panel">
                         Вініл - синтетична ПВХ плівка яка не “боїться” вологи. Розмір готового
-                        виробу
-                        може мати буль який розмір - від маленької круглої або фігурної наліпки до
-                        наліпки на вікна 70 х 230 см. Легко наноситься та майже на залишає слідів після відклеювання.
-                        ПЕТ - так само як вініл є синтетичним матеріалом та має його влавстивості проте метод друку
-                        лише
-                        цифровий на лазерному принтері. Максимальній розмір друку - формат А3.
+                        виробу може мати будь який розмір - від маленької круглої або фігурної наліпки до
+                        наліпки на вікно 70 х 230 см. Легко наноситься та майже на залишає слідів після відклеювання.
+                        ПЕТ - так само як вініл є синтетичним матеріалом на відміну від вінілу не тягнеться, проте метод друку
+                        лише цифровий на лазерному принтері. Максимальній розмір друку - формат А3.
                         Плівка стійка до механічних пошкоджень, а цифровий друк триамється краще ніж на будь-якому
-                        іншому матеріалі. Ламінація зазвичай не використовуюється так як тонер має значну адгезію до матеріалу.
+                        іншому матеріалі. Ламінація зазвичай не використовуюється так як тонер має значну адгезію до матеріалу та сам по собі достатньо тривкий до механічного пошкодження.
                         Сфера застосування - поклейка меню - qr кодів на столи,
-                        наліпка для продуктів для заморозки. Клейова основа - екстрапостійний клей.
+                        наліпка на продукти для заморозки. Клейова основа - екстрапостійний клей.
                         Зняти після наклеювання та вистигання складно, але можливо :)
                         Паперова самоклейка - на відміну від попередніх двох матеріалів має целюлозну (паперову) основу з крейдованою поверхнею. Клей
                         ексрапостійний. Самолекйка розрахована на поклейку упаковки: баночки, листи,
@@ -452,14 +451,15 @@
             <h2 class="text-32">Види матеріалів наліпок для друку</h2>
             <div class="row-wrap row-b-gap">
                 <div class="material_card col-gap">
-                    <div class="img_wrapper">
+                    <picture class="img_wrapper">
+                        <source srcset="./img/ritrama-matte-paperfox.webp" type="image/webp">
                         <img loading="lazy"
                              decoding="async"
-                             src="img/ritrama-matte-paperfox.webp"
+                             src="img/ritrama-matte-paperfox.jpeg"
                              width="3"
                              height="4"
                              alt="фото як відбискує матова наліпка Ritrama з друком">
-                    </div>
+                    </picture>
                     <div class="col col-gap">
                         <h4 class="text-24">Матова</h4>
                         <p>Наліпка має матову мікроструктурну поверхню, відблиск не чіткий, плавно розсіюючий світло
@@ -468,14 +468,15 @@
                     </div>
                 </div>
                 <div class="material_card col col-2-md col-gap">
-                    <div class="img_wrapper">
+                    <picture class="img_wrapper">
+                        <source srcset="./img/ritrama-glos-paperfox.webp" type="image/webp">
                         <img loading="lazy"
                              decoding="async"
-                             src="./img/ritrama-glos-paperfox.webp"
+                             src="./img/ritrama-glos-paperfox.jpeg"
                              width="3"
                              height="4"
                              alt="фото як відбискує матова наліпка Ritrama з друком">
-                    </div>
+                    </picture>
                     <div class="col col-gap">
                         <h4 class="text-24">Глянцева</h4>
                         <p>Вінілова наліпка з глянцевою поверхнею. Відблиски поверхні чіткі, висока ступінь
@@ -483,14 +484,15 @@
                     </div>
                 </div>
                 <div class="material_card col col-2-md col-gap">
-                    <div class="img_wrapper">
+                    <picture class="img_wrapper">
+                        <source srcset="./img/ritrama-transparent-paperfox.webp" type="image/webp">
                         <img loading="lazy"
                              decoding="async"
-                             src="./img/ritrama-transparent-paperfox.webp"
+                             src="./img/ritrama-transparent-paperfox.jpeg"
                              width="3"
                              height="4"
                              alt="фото як відбискує матова наліпка Ritrama з друком">
-                    </div>
+                    </picture>
                     <div class="col col-gap">
                         <h4 class="text-24">Прозора</h4>
                         <p>Прозора наліпка з постійнийним клеойвим шаром. Використовується на світлих
@@ -498,14 +500,15 @@
                     </div>
                 </div>
                 <div class="material_card col col-2-md col-gap">
-                    <div class="img_wrapper">
+                    <picture class="img_wrapper">
+                        <source srcset="./img/ritrama-blackout-paperfox.webp" type="image/webp">
                         <img loading="lazy"
                              decoding="async"
-                             src="./img/ritrama-blackout-paperfox.webp"
+                             src="./img/ritrama-blackout-paperfox.jpeg"
                              width="3"
                              height="4"
                              alt="фото як відбискує матова наліпка Ritrama з друком">
-                    </div>
+                    </picture>
                     <div class="col col-gap">
                         <h4 class="text-24">Блекаут</h4>
                         <p>Вінілова глянцева наліпка з клеєвим шаром чорного кольору, використовується для
@@ -525,46 +528,40 @@
                     <thead>
                     <tr>
                         <th></th>
-                        <th>1...5 м²</th>
-                        <th>5...35 м²</th>
-                        <th>35...50 м²</th>
-                        <th>50+ м</th>
+                        <th>1...3 м²</th>
+                        <th>3...10 м²</th>
+                        <th>10+ м</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <th>Ritrama біла глянець</th>
-                        <td>170</td>
+                        <th>Ritrama біла глянцева</th>
+                        <td>210</td>
                         <td>160</td>
-                        <td>150</td>
-                        <td>140</td>
+                        <td>130</td>
                     </tr>
                     <tr>
                         <th>Ritrama біла матова</th>
-                        <td>175</td>
-                        <td>165</td>
-                        <td>155</td>
-                        <td>145</td>
+                        <td>210</td>
+                        <td>160</td>
+                        <td>130</td>
                     </tr>
                     <tr>
                         <th>Ritrama прозора глянцева</th>
-                        <td>170</td>
+                        <td>210</td>
                         <td>160</td>
-                        <td>150</td>
-                        <td>140</td>
+                        <td>130</td>
                     </tr>
                     <tr>
                         <th>Ritrama Blackout</th>
-                        <td>175</td>
-                        <td>165</td>
-                        <td>155</td>
-                        <td>145</td>
+                        <td>340</td>
+                        <td>300</td>
+                        <td>250</td>
                     </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-
         <div class="container col-gap">
             <h3 class="text-32">Вартість друку у якості 1440р</h3>
             <p>Підходить для маленьких наліпок, інтер’єного використання та друку фотографій</p>
@@ -572,41 +569,36 @@
                 <table class="table">
                     <thead>
                     <tr>
-                        <th>1440p</th>
-                        <th>1...5 м²</th>
-                        <th>5...35 м²</th>
-                        <th>35...50 м²</th>
-                        <th>50+ м²</th>
+                        <th></th>
+                        <th>1...3 м²</th>
+                        <th>3...10 м²</th>
+                        <th>10+ м</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <th>Ritrama біла глянець</th>
-                        <td>170</td>
-                        <td>160</td>
-                        <td>150</td>
-                        <td>140</td>
+                        <th>Ritrama біла глянцева</th>
+                        <td>260</td>
+                        <td>210</td>
+                        <td>190</td>
                     </tr>
                     <tr>
                         <th>Ritrama біла матова</th>
-                        <td>175</td>
-                        <td>165</td>
-                        <td>155</td>
-                        <td>145</td>
+                        <td>260</td>
+                        <td>210</td>
+                        <td>190</td>
                     </tr>
                     <tr>
                         <th>Ritrama прозора глянцева</th>
-                        <td>170</td>
-                        <td>160</td>
-                        <td>150</td>
-                        <td>140</td>
+                        <td>250</td>
+                        <td>200</td>
+                        <td>180</td>
                     </tr>
                     <tr>
                         <th>Ritrama Blackout</th>
-                        <td>175</td>
-                        <td>165</td>
-                        <td>155</td>
-                        <td>145</td>
+                        <td>390</td>
+                        <td>350</td>
+                        <td>290</td>
                     </tr>
                     </tbody>
                 </table>

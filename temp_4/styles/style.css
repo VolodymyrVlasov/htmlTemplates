@@ -38,7 +38,7 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    background-image: url("../img/large-printing-process-paperfox.webp");
+    background-image: url("../img/large-printing-process-paperfox.webp"), url("../img/large-printing-process-paperfox.jpeg");
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -159,24 +159,34 @@ ol, ul {
 }
 
 .custom_number-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
+    outline: none;
+    border: none;
     width: 28px;
     height: 28px;
-    outline: none;
-    border-radius: 16px;
-    border: 1px solid var(--color-theme);
-    color: var(--color-theme);
-    font-size: 32px;
-    transition: var(--time-tr-time);
+    border-radius: 999px;
+    background-color: transparent;
 }
 
-.custom_number-btn:hover {
-    background: var(--color-theme);
-    color: #fff;
+.minus {
+    background-image: url("../img/icon-plus-minus-in-circle.svg");
+    background-size: 200% 200%;
+    background-position: top left;
 }
+
+.plus:hover {
+    background-position: bottom right;
+}
+
+.minus:hover {
+    background-position: bottom left;
+}
+
+.plus {
+    background-image: url("../img/icon-plus-minus-in-circle.svg");
+    background-size: 200% 200%;
+    background-position: right top;
+}
+
 
 .custom_input-input--number {
     width: 50px;
@@ -186,7 +196,7 @@ ol, ul {
     color: var(--color-theme);
 }
 
-.custom_input-input--number:focus{
+.custom_input-input--number:focus {
     border: none;
     outline: none;
 }

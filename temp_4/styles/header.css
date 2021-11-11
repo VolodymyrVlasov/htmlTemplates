@@ -258,6 +258,11 @@
         display: none;
     }
 
+    .main_menu > li:not(:last-child) {
+        border: 0;
+        margin: 0;
+    }
+
     .mob-menu-btn {
         margin: 16px 0;
         background: url("../img/ico-mob-menu.svg") no-repeat left 100%;
@@ -268,21 +273,22 @@
         border: 0;
     }
 
-
     .menu_item:focus-within > .drop_down_wrapper,
     .menu_item:hover > .drop_down_wrapper {
         display: flex;
         visibility: visible;
         opacity: 1;
         position: static;
-
-
     }
 
     .drop_down_container,
     .header--container {
         max-width: 100%;
         padding: 0 15px;
+    }
+
+    .main_menu {
+        box-shadow: 0 16px 18px -10px rgba(0, 0, 0, 0.4);
     }
 
     .mob-menu-wrapper:focus-within > .mob-menu-btn {
@@ -347,9 +353,7 @@
 
 /* `xsm` applies to x-small devices (iPhone 5/5s/SE, equals to 320px) */
 @media (max-width: 320px) {
-    .main_menu {
-        box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.15);
-    }
+
 }
 
 
