@@ -1,3 +1,4 @@
+
 const product = {
     width: 40,
     height: 60,
